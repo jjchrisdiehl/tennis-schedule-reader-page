@@ -1,4 +1,4 @@
-import { Booking, BookingInterface, BookingProps } from "./Booking";
+import { Booking, BookingInterface } from "./Booking";
 
 // Represents a court with dynamic court names as keys
 export type Court = {
