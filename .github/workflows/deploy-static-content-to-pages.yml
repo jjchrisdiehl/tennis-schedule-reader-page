@@ -1,4 +1,4 @@
-# Simple workflow for deploying static content to GitHub Pages
+# Simple workflow for deploying static content to Pages
 name: Deploy static content to Pages
 
 on:
@@ -30,22 +30,30 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: 'npm'
+
       - name: Install dependencies
         run: npm ci
+        working-directory: ./tennis-schedule-reader
+
       - name: Build
         run: npm run build
+        working-directory: ./tennis-schedule-reader
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload dist folder
-          path: './tennis-schedule-reader/dist'
+          # Upload dist folder from the subdirectory
+          path: ./tennis-schedule-reader/dist
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
