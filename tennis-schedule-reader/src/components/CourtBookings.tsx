@@ -33,14 +33,10 @@ export function CourtBookings({ data }: { data: CourtBookingsData[] }) {
                     <h2>{formatDate(String(dayData.date))}</h2>
                     <ul className="courts schedule">
                         {dayData["Court Bookings"].map((court, idx) => {
-                            const [courtName, bookings] = Object.entries(court)[0] as [
-                                string,
-                                BookingProps["bookings"]
-                            ];
+                            const courtName = Object.keys(court)[0];
+                            const bookings = court[courtName];
                             if (bookings.length === 0) return null; // Skip empty bookings
-                            return (
-                                <Booking key={idx} courtName={courtName} bookings={bookings} />
-                            );
+                            return <Booking key={idx} courtName={courtName} bookings={bookings} />;
                         })}
                     </ul>
                 </div>
