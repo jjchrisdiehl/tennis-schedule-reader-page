@@ -47,13 +47,7 @@
         "Court 3": []
       },
       {
-        "Court 4": [
-          {
-            "start_time": 22,
-            "end_time": 23,
-            "available_time": 1
-          }
-        ]
+        "Court 4": []
       },
       {
         "Court 5": [
@@ -268,13 +262,7 @@
     "date": "20241219",
     "Court Bookings": [
       {
-        "Court 1": [
-          {
-            "start_time": 22,
-            "end_time": 23,
-            "available_time": 1
-          }
-        ]
+        "Court 1": []
       },
       {
         "Court 2": [
