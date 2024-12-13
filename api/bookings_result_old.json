@@ -344,11 +344,6 @@
             "start_time": 6,
             "end_time": 6.5,
             "available_time": 0.5
-          },
-          {
-            "start_time": 15,
-            "end_time": 18,
-            "available_time": 3
           }
         ]
       }
