@@ -313,10 +313,22 @@
     "date": "20241220",
     "Court Bookings": [
       {
-        "Court 1": []
+        "Court 1": [
+          {
+            "start_time": 11,
+            "end_time": 12,
+            "available_time": 1
+          }
+        ]
       },
       {
-        "Court 2": []
+        "Court 2": [
+          {
+            "start_time": 10,
+            "end_time": 11,
+            "available_time": 1
+          }
+        ]
       },
       {
         "Court 3": [
