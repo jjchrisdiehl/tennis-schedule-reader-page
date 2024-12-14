@@ -180,19 +180,9 @@
       {
         "Court 2": [
           {
-            "start_time": 10,
-            "end_time": 11,
-            "available_time": 1
-          },
-          {
             "start_time": 11,
-            "end_time": 11.5,
-            "available_time": 0.5
-          },
-          {
-            "start_time": 11.5,
             "end_time": 12,
-            "available_time": 0.5
+            "available_time": 1
           },
           {
             "start_time": 22.5,
