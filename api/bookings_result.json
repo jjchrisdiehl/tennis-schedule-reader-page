@@ -307,6 +307,11 @@
             "start_time": 9,
             "end_time": 10,
             "available_time": 1
+          },
+          {
+            "start_time": 13,
+            "end_time": 21,
+            "available_time": 8
           }
         ]
       },
@@ -339,7 +344,13 @@
         ]
       },
       {
-        "Court 4": []
+        "Court 4": [
+          {
+            "start_time": 12,
+            "end_time": 13,
+            "available_time": 1
+          }
+        ]
       },
       {
         "Court 5": []
