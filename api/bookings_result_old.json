@@ -63,16 +63,6 @@
             "start_time": 8,
             "end_time": 9,
             "available_time": 1
-          },
-          {
-            "start_time": 9,
-            "end_time": 9.5,
-            "available_time": 0.5
-          },
-          {
-            "start_time": 9.5,
-            "end_time": 10,
-            "available_time": 0.5
           }
         ]
       }
@@ -330,6 +320,16 @@
             "start_time": 8,
             "end_time": 9,
             "available_time": 1
+          },
+          {
+            "start_time": 10,
+            "end_time": 11,
+            "available_time": 1
+          },
+          {
+            "start_time": 11,
+            "end_time": 21,
+            "available_time": 10
           }
         ]
       },
