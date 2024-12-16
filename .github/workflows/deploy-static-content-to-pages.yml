@@ -26,26 +26,26 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Debug working directory
-        run: ls -la ./tennis-schedule-reader
+        run: ls -la ./tennis-schedule-reader-page
 
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: 'npm'
-          cache-dependency-path: ./tennis-schedule-reader/package-lock.json
+          cache-dependency-path: ./tennis-schedule-reader-page/package-lock.json
 
       - name: Install dependencies
         run: npm ci
-        working-directory: ./tennis-schedule-reader
+        working-directory: ./tennis-schedule-reader-page
         
       - name: Install additional dependencies
         run: npm install -D sass-embedded
-        working-directory: ./tennis-schedule-reader
+        working-directory: ./tennis-schedule-reader-page
         
       - name: Build
         run: npm run build
-        working-directory: ./tennis-schedule-reader
+        working-directory: ./tennis-schedule-reader-page
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -53,7 +53,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./tennis-schedule-reader/dist
+          path: ./tennis-schedule-reader-page/dist
 
       - name: Deploy to GitHub Pages
         id: deployment
