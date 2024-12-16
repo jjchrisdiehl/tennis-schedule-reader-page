@@ -1,0 +1,372 @@
+[
+  {
+    "date": "20241125",
+    "Court Bookings": [
+      {
+        "Court 1": []
+      },
+      {
+        "Court 2": []
+      },
+      {
+        "Court 3": []
+      },
+      {
+        "Court 4": []
+      },
+      {
+        "Court 5": [
+          {
+            "id": "285705d9-4222-4600-97e0-ac78f2d4c4a5",
+            "start_time": 22.5,
+            "end_time": 23,
+            "available_time": 0.5
+          }
+        ]
+      },
+      {
+        "Court 6": []
+      }
+    ]
+  },
+  {
+    "date": "20241126",
+    "Court Bookings": [
+      {
+        "Court 1": []
+      },
+      {
+        "Court 2": []
+      },
+      {
+        "Court 3": [
+          {
+            "id": "916bffe5-17bb-4f24-89cd-92c606ccd72d",
+            "start_time": 8,
+            "end_time": 9,
+            "available_time": 1
+          },
+          {
+            "id": "166a4abb-a5ca-40b7-a91d-8c6d43db3642",
+            "start_time": 9,
+            "end_time": 9.5,
+            "available_time": 0.5
+          }
+        ]
+      },
+      {
+        "Court 4": [
+          {
+            "id": "2d5b51c9-f473-414a-85bc-6fbc7cd2bfab",
+            "start_time": 8,
+            "end_time": 9,
+            "available_time": 1
+          },
+          {
+            "id": "0debeb0d-f3d4-4c97-bff3-ec76a8bade0a",
+            "start_time": 14,
+            "end_time": 15,
+            "available_time": 1
+          }
+        ]
+      },
+      {
+        "Court 5": []
+      },
+      {
+        "Court 6": []
+      }
+    ]
+  },
+  {
+    "date": "20241127",
+    "Court Bookings": [
+      {
+        "Court 1": []
+      },
+      {
+        "Court 2": []
+      },
+      {
+        "Court 3": []
+      },
+      {
+        "Court 4": [
+          {
+            "id": "f7e9d46e-ff0a-4209-a722-4b1d9a702370",
+            "start_time": 6,
+            "end_time": 6.5,
+            "available_time": 0.5
+          },
+          {
+            "id": "7a6b53d1-2d23-4aa3-9f7e-c429d6b74bbe",
+            "start_time": 6.5,
+            "end_time": 7,
+            "available_time": 0.5
+          }
+        ]
+      },
+      {
+        "Court 5": []
+      },
+      {
+        "Court 6": []
+      }
+    ]
+  },
+  {
+    "date": "20241128",
+    "Court Bookings": [
+      {
+        "Court 1": []
+      },
+      {
+        "Court 2": []
+      },
+      {
+        "Court 3": []
+      },
+      {
+        "Court 4": []
+      },
+      {
+        "Court 5": []
+      },
+      {
+        "Court 6": [
+          {
+            "id": "8ec41599-6243-46ae-9576-f8b2d2334bed",
+            "start_time": 6,
+            "end_time": 6.5,
+            "available_time": 0.5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "20241129",
+    "Court Bookings": [
+      {
+        "Court 1": []
+      },
+      {
+        "Court 2": []
+      },
+      {
+        "Court 3": []
+      },
+      {
+        "Court 4": []
+      },
+      {
+        "Court 5": []
+      },
+      {
+        "Court 6": []
+      }
+    ]
+  },
+  {
+    "date": "20241130",
+    "Court Bookings": [
+      {
+        "Court 1": []
+      },
+      {
+        "Court 2": [
+          {
+            "id": "b8cb79f9-3454-4300-87cf-2b466b43f645",
+            "start_time": 6,
+            "end_time": 6.5,
+            "available_time": 0.5
+          },
+          {
+            "id": "185c1d66-3e35-4e47-9c54-2aa369683df2",
+            "start_time": 6.5,
+            "end_time": 7,
+            "available_time": 0.5
+          }
+        ]
+      },
+      {
+        "Court 3": [
+          {
+            "id": "41efb9f2-9eef-4365-a340-a0e43db59c93",
+            "start_time": 18.5,
+            "end_time": 19,
+            "available_time": 0.5
+          }
+        ]
+      },
+      {
+        "Court 4": [
+          {
+            "id": "b18d3841-a82e-4b80-8bc0-db7b3c12f7f3",
+            "start_time": 18.5,
+            "end_time": 19,
+            "available_time": 0.5
+          }
+        ]
+      },
+      {
+        "Court 5": [
+          {
+            "id": "5e68786e-65a3-45ee-93df-a53ad6057977",
+            "start_time": 18.5,
+            "end_time": 19,
+            "available_time": 0.5
+          }
+        ]
+      },
+      {
+        "Court 6": [
+          {
+            "id": "a8a58569-0dcd-4cde-962e-527d60198535",
+            "start_time": 22.5,
+            "end_time": 23,
+            "available_time": 0.5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "date": "20241201",
+    "Court Bookings": [
+      {
+        "Court 1": [
+          {
+            "id": "f4e479f8-56e3-4743-9a43-0dae1a4a61c3",
+            "start_time": 22.5,
+            "end_time": 23.5,
+            "available_time": 1
+          }
+        ]
+      },
+      {
+        "Court 2": [
+          {
+            "id": "cd9f5ea2-2c0b-4d9f-ba3a-4d9c72a52f5e",
+            "start_time": 22.5,
+            "end_time": 23.5,
+            "available_time": 1
+          }
+        ]
+      },
+      {
+        "Court 3": [
+          {
+            "id": "104ca638-a47a-456d-b42d-d7b299c28d83",
+            "start_time": 22.5,
+            "end_time": 23.5,
+            "available_time": 1
+          }
+        ]
+      },
+      {
+        "Court 4": []
+      },
+      {
+        "Court 5": []
+      },
+      {
+        "Court 6": []
+      }
+    ]
+  },
+  {
+    "date": "20241202",
+    "Court Bookings": [
+      {
+        "Court 1": [
+          {
+            "id": "34976363-31f6-4c68-bb5d-d72ebeb47fcf",
+            "start_time": 14.5,
+            "end_time": 15.5,
+            "available_time": 1
+          }
+        ]
+      },
+      {
+        "Court 2": [
+          {
+            "id": "3154be14-ae3c-433c-8c7f-26372aea65bc",
+            "start_time": 6,
+            "end_time": 6.5,
+            "available_time": 0.5
+          },
+          {
+            "id": "24666d15-fda6-48c8-a5af-5e837fb26ddc",
+            "start_time": 6.5,
+            "end_time": 7,
+            "available_time": 0.5
+          },
+          {
+            "id": "92aab832-dcaf-4657-a856-cd9e337f6161",
+            "start_time": 14,
+            "end_time": 15.5,
+            "available_time": 1.5
+          }
+        ]
+      },
+      {
+        "Court 3": [
+          {
+            "id": "a4a04224-ea95-47cc-b20a-a4cc58f1dd1a",
+            "start_time": 6,
+            "end_time": 6.5,
+            "available_time": 0.5
+          },
+          {
+            "id": "310e44ec-fcd8-4626-be63-3bc39a6642e5",
+            "start_time": 14.5,
+            "end_time": 16.5,
+            "available_time": 2
+          }
+        ]
+      },
+      {
+        "Court 4": [
+          {
+            "id": "80ec2b2e-0ac1-4da1-9536-8320173d52cb",
+            "start_time": 6,
+            "end_time": 6.5,
+            "available_time": 0.5
+          },
+          {
+            "id": "0e3d8da1-3021-4ea0-b933-1c678c5a2020",
+            "start_time": 6.5,
+            "end_time": 7,
+            "available_time": 0.5
+          },
+          {
+            "id": "1b278d51-5f23-45ed-a908-b762dd624dd8",
+            "start_time": 13,
+            "end_time": 14,
+            "available_time": 1
+          },
+          {
+            "id": "64c6901b-8858-4fd5-9ee6-dad5a9b7dcf8",
+            "start_time": 14,
+            "end_time": 14.5,
+            "available_time": 0.5
+          }
+        ]
+      },
+      {
+        "Court 5": []
+      },
+      {
+        "Court 6": [
+          {
+            "id": "c7723675-3a44-4212-ba6d-c1f195c2a311",
+            "start_time": 13.5,
+            "end_time": 14.5,
+            "available_time": 1
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,100 @@
+#root {
+  max-width: 1280px;
+  width: 100%;
+  margin-inline: auto; /* Center horizontally when width < max-width */
+  padding-inline: clamp(
+    1rem,
+    5vw,
+    4rem
+  ); /* Ensure padding to maintain minimum space */
+  margin-block: clamp(2rem, 5vw, 4rem); /* Responsive top and bottom margins */
+}
+
+.day-booking {
+  position: relative;
+
+  &__date-header {
+    margin-block-start: 3rem;
+    margin-block-end: 2rem;
+  }
+}
+.schedule {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  display: grid;
+  column-gap: 20px;
+  row-gap: 3rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+  & .court-column {
+    padding: 2rem 1rem 1rem;
+    position: relative;
+    border: 1px solid #50575e;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+
+    &__title {
+      position: absolute;
+      top: -1.5rem;
+      left: 50%;
+      text-align: center;
+      transform: translate(-50%);
+      padding: 0.5rem;
+      margin: 0;
+      background-color: #242424;
+    }
+  }
+
+  & .booking-card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    position: relative;
+    border: 1px solid #f2d76b;
+    border-radius: 5px;
+    padding: 1.5rem 1rem;
+
+    & * {
+      margin: unset;
+    }
+
+    &__header {
+      position: absolute;
+      top: -1.15rem;
+      font-size: 18px;
+      font-weight: 600;
+      background-color: #242424;
+      padding: 0.3rem;
+    }
+
+    &__button {
+      align-self: center;
+      border-radius: 8px;
+      border: 1px solid #f2d76b;
+      padding: 0.6rem 1.2rem;
+      width: 80%;
+      font-size: 1rem;
+      font-weight: 600;
+      font-family: inherit;
+      background-color: transparent;
+      cursor: pointer;
+      transition: border-color 0.25s;
+    }
+
+    & p {
+      & > span {
+        font-weight: 600;
+      }
+    }
+
+    &__footer {
+      display: flex;
+      flex-direction: column;
+      border-top: 1px solid gray;
+      padding-top: 1.5rem;
+    }
+  }
+}
