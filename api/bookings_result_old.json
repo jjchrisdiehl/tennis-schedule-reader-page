@@ -367,21 +367,6 @@
             "start_time": 6.5,
             "end_time": 7,
             "available_time": 0.5
-          },
-          {
-            "start_time": 15,
-            "end_time": 16,
-            "available_time": 1
-          },
-          {
-            "start_time": 16,
-            "end_time": 16.5,
-            "available_time": 0.5
-          },
-          {
-            "start_time": 16.5,
-            "end_time": 17,
-            "available_time": 0.5
           }
         ]
       },
@@ -398,14 +383,9 @@
             "available_time": 1
           },
           {
-            "start_time": 16.5,
-            "end_time": 17.5,
-            "available_time": 1
-          },
-          {
-            "start_time": 17.5,
-            "end_time": 18,
-            "available_time": 0.5
+            "start_time": 19,
+            "end_time": 21,
+            "available_time": 2
           }
         ]
       },
