@@ -335,6 +335,11 @@
             "start_time": 14,
             "end_time": 15,
             "available_time": 1
+          },
+          {
+            "start_time": 19,
+            "end_time": 20,
+            "available_time": 1
           }
         ]
       },
