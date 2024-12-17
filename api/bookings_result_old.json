@@ -304,44 +304,9 @@
             "available_time": 0.5
           },
           {
-            "start_time": 10,
-            "end_time": 11,
-            "available_time": 1
-          },
-          {
-            "start_time": 11,
-            "end_time": 11.5,
-            "available_time": 0.5
-          },
-          {
-            "start_time": 14.5,
-            "end_time": 15.5,
-            "available_time": 1
-          },
-          {
-            "start_time": 15.5,
-            "end_time": 16,
-            "available_time": 0.5
-          },
-          {
-            "start_time": 16,
-            "end_time": 16.5,
-            "available_time": 0.5
-          },
-          {
             "start_time": 16.5,
-            "end_time": 17,
-            "available_time": 0.5
-          },
-          {
-            "start_time": 17,
             "end_time": 17.5,
-            "available_time": 0.5
-          },
-          {
-            "start_time": 19.5,
-            "end_time": 21,
-            "available_time": 1.5
+            "available_time": 1
           }
         ]
       },
@@ -356,11 +321,6 @@
             "start_time": 6.5,
             "end_time": 7,
             "available_time": 0.5
-          },
-          {
-            "start_time": 20,
-            "end_time": 21,
-            "available_time": 1
           }
         ]
       },
@@ -374,11 +334,6 @@
           {
             "start_time": 14,
             "end_time": 15,
-            "available_time": 1
-          },
-          {
-            "start_time": 20,
-            "end_time": 21,
             "available_time": 1
           }
         ]
@@ -394,11 +349,6 @@
             "start_time": 17,
             "end_time": 17.5,
             "available_time": 0.5
-          },
-          {
-            "start_time": 19.5,
-            "end_time": 21,
-            "available_time": 1.5
           }
         ]
       },
@@ -416,21 +366,6 @@
           {
             "start_time": 6,
             "end_time": 6.5,
-            "available_time": 0.5
-          },
-          {
-            "start_time": 15.5,
-            "end_time": 16.5,
-            "available_time": 1
-          },
-          {
-            "start_time": 16.5,
-            "end_time": 17,
-            "available_time": 0.5
-          },
-          {
-            "start_time": 17,
-            "end_time": 17.5,
             "available_time": 0.5
           }
         ]
