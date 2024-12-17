@@ -334,7 +334,13 @@
         ]
       },
       {
-        "Court 3": []
+        "Court 3": [
+          {
+            "start_time": 8,
+            "end_time": 9,
+            "available_time": 1
+          }
+        ]
       },
       {
         "Court 4": []
