@@ -399,6 +399,21 @@
       {
         "Court 5": [
           {
+            "start_time": 16.5,
+            "end_time": 17.5,
+            "available_time": 1
+          },
+          {
+            "start_time": 17.5,
+            "end_time": 18,
+            "available_time": 0.5
+          },
+          {
+            "start_time": 18,
+            "end_time": 18.5,
+            "available_time": 0.5
+          },
+          {
             "start_time": 22.5,
             "end_time": 23,
             "available_time": 0.5
