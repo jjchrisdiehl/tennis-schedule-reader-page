@@ -430,10 +430,22 @@
     "date": "20241224",
     "Court Bookings": [
       {
-        "Court 1": []
+        "Court 1": [
+          {
+            "start_time": 15,
+            "end_time": 18,
+            "available_time": 3
+          }
+        ]
       },
       {
-        "Court 2": []
+        "Court 2": [
+          {
+            "start_time": 15,
+            "end_time": 18,
+            "available_time": 3
+          }
+        ]
       },
       {
         "Court 3": [
@@ -444,8 +456,13 @@
           },
           {
             "start_time": 14,
+            "end_time": 15,
+            "available_time": 1
+          },
+          {
+            "start_time": 15,
             "end_time": 18,
-            "available_time": 4
+            "available_time": 3
           }
         ]
       },
@@ -453,8 +470,13 @@
         "Court 4": [
           {
             "start_time": 14,
+            "end_time": 15,
+            "available_time": 1
+          },
+          {
+            "start_time": 15,
             "end_time": 18,
-            "available_time": 4
+            "available_time": 3
           }
         ]
       },
