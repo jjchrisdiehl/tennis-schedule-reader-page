@@ -438,8 +438,13 @@
         "Court 1": [
           {
             "start_time": 13.5,
+            "end_time": 14.5,
+            "available_time": 1
+          },
+          {
+            "start_time": 14.5,
             "end_time": 18,
-            "available_time": 4.5
+            "available_time": 3.5
           }
         ]
       },
