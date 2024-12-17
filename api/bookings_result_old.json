@@ -327,6 +327,11 @@
             "start_time": 15,
             "end_time": 15.5,
             "available_time": 0.5
+          },
+          {
+            "start_time": 15.5,
+            "end_time": 16,
+            "available_time": 0.5
           }
         ]
       },
@@ -341,6 +346,11 @@
             "start_time": 6.5,
             "end_time": 7,
             "available_time": 0.5
+          },
+          {
+            "start_time": 15,
+            "end_time": 16,
+            "available_time": 1
           }
         ]
       },
@@ -361,9 +371,14 @@
       {
         "Court 4": [
           {
-            "start_time": 16,
-            "end_time": 21,
-            "available_time": 5
+            "start_time": 12,
+            "end_time": 13,
+            "available_time": 1
+          },
+          {
+            "start_time": 13,
+            "end_time": 13.5,
+            "available_time": 0.5
           }
         ]
       },
@@ -376,6 +391,11 @@
             "start_time": 6,
             "end_time": 6.5,
             "available_time": 0.5
+          },
+          {
+            "start_time": 15.5,
+            "end_time": 16.5,
+            "available_time": 1
           }
         ]
       }
