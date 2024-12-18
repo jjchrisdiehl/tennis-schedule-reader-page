@@ -342,8 +342,13 @@
           },
           {
             "start_time": 15,
+            "end_time": 15.5,
+            "available_time": 0.5
+          },
+          {
+            "start_time": 15.5,
             "end_time": 18,
-            "available_time": 3
+            "available_time": 2.5
           }
         ]
       },
@@ -361,8 +366,13 @@
           },
           {
             "start_time": 15,
+            "end_time": 15.5,
+            "available_time": 0.5
+          },
+          {
+            "start_time": 15.5,
             "end_time": 18,
-            "available_time": 3
+            "available_time": 2.5
           }
         ]
       },
@@ -385,8 +395,13 @@
           },
           {
             "start_time": 15,
+            "end_time": 15.5,
+            "available_time": 0.5
+          },
+          {
+            "start_time": 15.5,
             "end_time": 18,
-            "available_time": 3
+            "available_time": 2.5
           }
         ]
       },
@@ -418,8 +433,13 @@
         "Court 5": [
           {
             "start_time": 14.5,
+            "end_time": 15.5,
+            "available_time": 1
+          },
+          {
+            "start_time": 15.5,
             "end_time": 18,
-            "available_time": 3.5
+            "available_time": 2.5
           }
         ]
       },
