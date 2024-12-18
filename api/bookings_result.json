@@ -382,11 +382,6 @@
       {
         "Court 3": [
           {
-            "start_time": 10,
-            "end_time": 11,
-            "available_time": 1
-          },
-          {
             "start_time": 13,
             "end_time": 14,
             "available_time": 1
