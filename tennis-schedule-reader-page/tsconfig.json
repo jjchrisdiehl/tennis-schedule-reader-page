@@ -1,16 +1,17 @@
 {
-    "files": [],
-    "references": [
-        { "path": "./tsconfig.app.json" },
-        { "path": "./tsconfig.node.json" }
-    ],
-    "compilerOptions": {
-        "strict": true,
-        "resolveJsonModule": true,
-        "esModuleInterop": true,
-        "target": "ES2020",
-        "moduleResolution": "node",
-        "jsx": "react",
-        "noImplicitAny": true
-    }
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "compilerOptions": {
+    "strict": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "target": "ES2020",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "noImplicitAny": true,
+    "types": ["vite/client"]
+  }
 }

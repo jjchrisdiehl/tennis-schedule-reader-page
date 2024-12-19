@@ -11,7 +11,15 @@ export interface CourtBookingsData {
     "Court Bookings": Court[];
 }
 
-export function CourtBookings({ data }: { data: CourtBookingsData[] }) {
+export function CourtBookings({
+    data,
+    is24HrTime,
+    availableHours,
+}: {
+    data: CourtBookingsData[];
+    is24HrTime: boolean;
+    availableHours: number[];
+}) {
     function formatDate(dateString: string): string {
         const date = new Date(
             Number(dateString.substring(0, 4)),
@@ -26,14 +34,27 @@ export function CourtBookings({ data }: { data: CourtBookingsData[] }) {
         });
     }
 
+    function isBookingWithinAvailableHours(
+        booking: BookingInterface,
+        availableHours: number[]
+    ): boolean {
+        const [from, to] = availableHours;
+        return (
+            Number(booking.start_time) >= from &&
+            Number(booking.end_time) <= to
+        );
+    }
+
     return (
         <div>
             {data.map((dayData: CourtBookingsData, index: number) => {
-                // Check if there are any bookings across all courts for the day
+                // Check if there are any bookings for the day across all courts after applying filters
                 const hasBookings = dayData["Court Bookings"].some((court: Court) => {
-                    // Check if any court has bookings (i.e., length > 0 for the bookings array)
-                    const courtBookings = Object.values(court)[0]; // Get the bookings array
-                    return courtBookings.length > 0;
+                    const courtName = Object.keys(court)[0];
+                    const courtBookings = court[courtName];
+                    return courtBookings.some((booking) =>
+                        isBookingWithinAvailableHours(booking, availableHours)
+                    );
                 });
 
                 return (
@@ -45,19 +66,25 @@ export function CourtBookings({ data }: { data: CourtBookingsData[] }) {
                             <ul className="courts schedule">
                                 {dayData["Court Bookings"].map((court: Court, idx: number) => {
                                     const courtName = Object.keys(court)[0];
-                                    const bookings = court[courtName];
+                                    const bookings = court[courtName].filter((booking) =>
+                                        isBookingWithinAvailableHours(
+                                            booking,
+                                            availableHours
+                                        )
+                                    );
                                     if (bookings.length === 0) return null; // Skip empty bookings
                                     return (
                                         <Booking
                                             key={idx}
                                             courtName={courtName}
                                             bookings={bookings}
+                                            is24HrTime={is24HrTime}
                                         />
                                     );
                                 })}
                             </ul>
                         ) : (
-                            <p>No bookings available 🙁</p>
+                            <p>No available bookings</p>
                         )}
                     </div>
                 );
