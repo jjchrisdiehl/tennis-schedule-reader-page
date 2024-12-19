@@ -6,13 +6,7 @@
         "Court 1": []
       },
       {
-        "Court 2": [
-          {
-            "start_time": 22.5,
-            "end_time": 23,
-            "available_time": 0.5
-          }
-        ]
+        "Court 2": []
       },
       {
         "Court 3": []
@@ -24,13 +18,7 @@
         "Court 5": []
       },
       {
-        "Court 6": [
-          {
-            "start_time": 22.5,
-            "end_time": 23,
-            "available_time": 0.5
-          }
-        ]
+        "Court 6": []
       }
     ]
   },
@@ -333,18 +321,7 @@
         "Court 1": []
       },
       {
-        "Court 2": [
-          {
-            "start_time": 14.5,
-            "end_time": 15.5,
-            "available_time": 1
-          },
-          {
-            "start_time": 15.5,
-            "end_time": 16,
-            "available_time": 0.5
-          }
-        ]
+        "Court 2": []
       },
       {
         "Court 3": []
