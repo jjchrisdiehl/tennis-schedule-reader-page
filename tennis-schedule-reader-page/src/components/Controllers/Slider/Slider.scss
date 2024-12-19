@@ -1,0 +1,47 @@
+.Slider__Root {
+  position: relative;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  touch-action: none;
+  width: 100%;
+  height: 30px;
+}
+
+.Slider__Track {
+  background-color: #deb100;
+  position: relative;
+  flex-grow: 1;
+  border-radius: 9999px;
+  height: 2px;
+}
+
+.Slider__Range {
+  position: absolute;
+  background-color: #deb100;
+  border-radius: 9999px;
+  height: 100%;
+}
+
+.Slider__Thumb {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  box-shadow: none;
+  border-radius: 10px;
+  &:hover {
+    background-color: #f2d76b;
+    box-shadow: 0 0 0 3px #68b3e8;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px #399ce3;
+  }
+}
+
+.Slider__Values {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}

@@ -1,0 +1,89 @@
+.Drawer__Button {
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 2;
+  top: 1rem;
+  right: 1rem;
+
+  & .Drawer__Button-Icon {
+    width: 32px;
+    height: 32px;
+    transition: 0.25s ease-in-out;
+
+    &:hover {
+      rotate: 25deg;
+      cursor: pointer;
+    }
+  }
+}
+
+.Drawer__Container {
+  height: 100vh;
+  width: 25vw;
+  min-width: 350px;
+  background-color: #3c434a;
+  transition: all 0.3s ease-in-out;
+  transform: translate(100%);
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  border-left: 2px solid #50575e;
+  -webkit-box-shadow: -20px 0px 16px -8px rgba(29, 35, 39, 1);
+  -moz-box-shadow: -20px 0px 16px -8px rgba(29, 35, 39, 1);
+  box-shadow: -20px 0px 16px -8px rgba(29, 35, 39, 1);
+
+  &--isOpen {
+    transform: translate(0);
+  }
+
+  & .Drawer__Contents {
+    padding: 3rem;
+
+    & .Settings__List {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      row-gap: 1rem;
+    }
+
+    & .Drawer__Item {
+      position: relative;
+      display: flex;
+      padding: 0.5rem 0;
+      flex-direction: column;
+    }
+
+    & .ControlGroup__Title {
+      margin: 0.5rem 0;
+    }
+
+    & .ControlGroup__Item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &.stacked {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    & .ControlGroup_Label {
+    }
+  }
+}
+
+/* Adjust width for smaller viewports */
+@media (max-width: 350px) {
+  .Drawer__Container {
+    min-width: unset;
+    width: 100vw; /* Ensure it matches the full viewport width */
+  }
+}
