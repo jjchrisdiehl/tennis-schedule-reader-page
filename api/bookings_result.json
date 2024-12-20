@@ -12,7 +12,13 @@
         "Court 3": []
       },
       {
-        "Court 4": []
+        "Court 4": [
+          {
+            "start_time": 16,
+            "end_time": 17,
+            "available_time": 1
+          }
+        ]
       },
       {
         "Court 5": []
