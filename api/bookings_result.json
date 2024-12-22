@@ -133,6 +133,11 @@
       {
         "Court 4": [
           {
+            "start_time": 13,
+            "end_time": 14,
+            "available_time": 1
+          },
+          {
             "start_time": 17,
             "end_time": 18,
             "available_time": 1
