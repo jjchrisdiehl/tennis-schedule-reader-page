@@ -56,11 +56,6 @@
             "start_time": 6.5,
             "end_time": 7,
             "available_time": 0.5
-          },
-          {
-            "start_time": 11,
-            "end_time": 12,
-            "available_time": 1
           }
         ]
       },
