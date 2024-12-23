@@ -104,23 +104,7 @@
         "Court 5": []
       },
       {
-        "Court 6": [
-          {
-            "start_time": 12,
-            "end_time": 13,
-            "available_time": 1
-          },
-          {
-            "start_time": 13,
-            "end_time": 13.5,
-            "available_time": 0.5
-          },
-          {
-            "start_time": 13.5,
-            "end_time": 14,
-            "available_time": 0.5
-          }
-        ]
+        "Court 6": []
       }
     ]
   },
@@ -210,7 +194,18 @@
         ]
       },
       {
-        "Court 6": []
+        "Court 6": [
+          {
+            "start_time": 6,
+            "end_time": 6.5,
+            "available_time": 0.5
+          },
+          {
+            "start_time": 6.5,
+            "end_time": 7,
+            "available_time": 0.5
+          }
+        ]
       }
     ]
   },
