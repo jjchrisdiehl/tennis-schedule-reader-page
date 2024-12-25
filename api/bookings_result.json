@@ -26,13 +26,7 @@
     "date": "20241226",
     "Court Bookings": [
       {
-        "Court 1": [
-          {
-            "start_time": 8,
-            "end_time": 9,
-            "available_time": 1
-          }
-        ]
+        "Court 1": []
       },
       {
         "Court 2": []
