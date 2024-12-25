@@ -187,7 +187,13 @@
     "date": "20250101",
     "Court Bookings": [
       {
-        "Court 1": []
+        "Court 1": [
+          {
+            "start_time": 13.5,
+            "end_time": 18,
+            "available_time": 4.5
+          }
+        ]
       },
       {
         "Court 2": []
