@@ -201,7 +201,13 @@
         "Court 1": []
       },
       {
-        "Court 2": []
+        "Court 2": [
+          {
+            "start_time": 11.5,
+            "end_time": 18,
+            "available_time": 6.5
+          }
+        ]
       },
       {
         "Court 3": []
