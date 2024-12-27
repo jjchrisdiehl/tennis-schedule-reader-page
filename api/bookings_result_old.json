@@ -49,13 +49,7 @@
     "date": "20241228",
     "Court Bookings": [
       {
-        "Court 1": [
-          {
-            "start_time": 7,
-            "end_time": 8,
-            "available_time": 1
-          }
-        ]
+        "Court 1": []
       },
       {
         "Court 2": []
