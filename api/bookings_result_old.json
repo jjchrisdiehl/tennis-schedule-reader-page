@@ -29,7 +29,13 @@
         "Court 1": []
       },
       {
-        "Court 2": []
+        "Court 2": [
+          {
+            "start_time": 7,
+            "end_time": 8,
+            "available_time": 1
+          }
+        ]
       },
       {
         "Court 3": []
