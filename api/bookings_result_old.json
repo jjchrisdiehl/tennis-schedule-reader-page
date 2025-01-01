@@ -274,6 +274,11 @@
             "start_time": 6.5,
             "end_time": 7,
             "available_time": 0.5
+          },
+          {
+            "start_time": 12,
+            "end_time": 13.5,
+            "available_time": 1.5
           }
         ]
       },
