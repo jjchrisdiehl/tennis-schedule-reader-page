@@ -315,8 +315,13 @@
           },
           {
             "start_time": 6.5,
+            "end_time": 7,
+            "available_time": 0.5
+          },
+          {
+            "start_time": 7,
             "end_time": 8,
-            "available_time": 1.5
+            "available_time": 1
           }
         ]
       },
@@ -329,8 +334,13 @@
           },
           {
             "start_time": 6.5,
+            "end_time": 7,
+            "available_time": 0.5
+          },
+          {
+            "start_time": 7,
             "end_time": 10.5,
-            "available_time": 4
+            "available_time": 3.5
           }
         ]
       }
