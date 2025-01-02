@@ -165,6 +165,11 @@
             "start_time": 6.5,
             "end_time": 7,
             "available_time": 0.5
+          },
+          {
+            "start_time": 12,
+            "end_time": 13,
+            "available_time": 1
           }
         ]
       },
@@ -240,8 +245,13 @@
         "Court 3": [
           {
             "start_time": 21.5,
+            "end_time": 22.5,
+            "available_time": 1
+          },
+          {
+            "start_time": 22.5,
             "end_time": 23,
-            "available_time": 1.5
+            "available_time": 0.5
           }
         ]
       },
@@ -259,8 +269,13 @@
           },
           {
             "start_time": 21.5,
+            "end_time": 22.5,
+            "available_time": 1
+          },
+          {
+            "start_time": 22.5,
             "end_time": 23,
-            "available_time": 1.5
+            "available_time": 0.5
           }
         ]
       },
