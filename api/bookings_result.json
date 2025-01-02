@@ -63,13 +63,7 @@
         "Court 5": []
       },
       {
-        "Court 6": [
-          {
-            "start_time": 8,
-            "end_time": 9,
-            "available_time": 1
-          }
-        ]
+        "Court 6": []
       }
     ]
   },
