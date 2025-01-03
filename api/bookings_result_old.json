@@ -74,7 +74,23 @@
         "Court 1": []
       },
       {
-        "Court 2": []
+        "Court 2": [
+          {
+            "start_time": 7,
+            "end_time": 8,
+            "available_time": 1
+          },
+          {
+            "start_time": 8,
+            "end_time": 8.5,
+            "available_time": 0.5
+          },
+          {
+            "start_time": 8.5,
+            "end_time": 9,
+            "available_time": 0.5
+          }
+        ]
       },
       {
         "Court 3": []
@@ -259,13 +275,7 @@
     "date": "20250109",
     "Court Bookings": [
       {
-        "Court 1": [
-          {
-            "start_time": 9,
-            "end_time": 10,
-            "available_time": 1
-          }
-        ]
+        "Court 1": []
       },
       {
         "Court 2": [
