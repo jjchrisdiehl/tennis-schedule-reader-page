@@ -258,11 +258,6 @@
             "start_time": 9,
             "end_time": 10,
             "available_time": 1
-          },
-          {
-            "start_time": 10,
-            "end_time": 12,
-            "available_time": 2
           }
         ]
       },
