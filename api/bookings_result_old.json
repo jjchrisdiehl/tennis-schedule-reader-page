@@ -293,16 +293,21 @@
         "Court 4": []
       },
       {
-        "Court 5": []
-      },
-      {
-        "Court 6": [
+        "Court 5": [
           {
-            "start_time": 12.5,
-            "end_time": 18,
-            "available_time": 5.5
+            "start_time": 12,
+            "end_time": 13,
+            "available_time": 1
+          },
+          {
+            "start_time": 13,
+            "end_time": 15,
+            "available_time": 2
           }
         ]
+      },
+      {
+        "Court 6": []
       }
     ]
   }
