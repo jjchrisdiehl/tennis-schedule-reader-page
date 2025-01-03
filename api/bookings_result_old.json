@@ -274,7 +274,13 @@
         "Court 5": []
       },
       {
-        "Court 6": []
+        "Court 6": [
+          {
+            "start_time": 12.5,
+            "end_time": 18,
+            "available_time": 5.5
+          }
+        ]
       }
     ]
   }
