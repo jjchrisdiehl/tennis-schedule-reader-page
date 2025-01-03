@@ -259,7 +259,13 @@
     "date": "20250110",
     "Court Bookings": [
       {
-        "Court 1": []
+        "Court 1": [
+          {
+            "start_time": 9,
+            "end_time": 12,
+            "available_time": 3
+          }
+        ]
       },
       {
         "Court 2": []
