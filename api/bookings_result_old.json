@@ -82,26 +82,6 @@
             "start_time": 6.5,
             "end_time": 7,
             "available_time": 0.5
-          },
-          {
-            "start_time": 7,
-            "end_time": 7.5,
-            "available_time": 0.5
-          },
-          {
-            "start_time": 7.5,
-            "end_time": 8,
-            "available_time": 0.5
-          },
-          {
-            "start_time": 8,
-            "end_time": 8.5,
-            "available_time": 0.5
-          },
-          {
-            "start_time": 8.5,
-            "end_time": 9,
-            "available_time": 0.5
           }
         ]
       },
@@ -115,16 +95,6 @@
           {
             "start_time": 6.5,
             "end_time": 7,
-            "available_time": 0.5
-          },
-          {
-            "start_time": 7,
-            "end_time": 7.5,
-            "available_time": 0.5
-          },
-          {
-            "start_time": 7.5,
-            "end_time": 8,
             "available_time": 0.5
           }
         ]
@@ -326,7 +296,13 @@
         "Court 5": []
       },
       {
-        "Court 6": []
+        "Court 6": [
+          {
+            "start_time": 12.5,
+            "end_time": 18,
+            "available_time": 5.5
+          }
+        ]
       }
     ]
   }
