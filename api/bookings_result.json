@@ -1,28 +1,5 @@
 [
   {
-    "date": "20250103",
-    "Court Bookings": [
-      {
-        "Court 1": []
-      },
-      {
-        "Court 2": []
-      },
-      {
-        "Court 3": []
-      },
-      {
-        "Court 4": []
-      },
-      {
-        "Court 5": []
-      },
-      {
-        "Court 6": []
-      }
-    ]
-  },
-  {
     "date": "20250104",
     "Court Bookings": [
       {
@@ -64,13 +41,7 @@
         "Court 5": []
       },
       {
-        "Court 6": [
-          {
-            "start_time": 11,
-            "end_time": 12,
-            "available_time": 1
-          }
-        ]
+        "Court 6": []
       }
     ]
   },
@@ -269,11 +240,6 @@
             "start_time": 9,
             "end_time": 10,
             "available_time": 1
-          },
-          {
-            "start_time": 14,
-            "end_time": 15,
-            "available_time": 1
           }
         ]
       },
@@ -285,6 +251,29 @@
             "available_time": 1
           }
         ]
+      },
+      {
+        "Court 3": []
+      },
+      {
+        "Court 4": []
+      },
+      {
+        "Court 5": []
+      },
+      {
+        "Court 6": []
+      }
+    ]
+  },
+  {
+    "date": "20250111",
+    "Court Bookings": [
+      {
+        "Court 1": []
+      },
+      {
+        "Court 2": []
       },
       {
         "Court 3": []
