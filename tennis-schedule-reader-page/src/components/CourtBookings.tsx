@@ -8,6 +8,7 @@ export type Court = {
 // Represents the structure of each day's booking data
 export interface CourtBookingsData {
     date: string;
+    lastUpdated: string;
     "Court Bookings": Court[];
 }
 

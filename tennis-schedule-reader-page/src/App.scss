@@ -7,9 +7,15 @@
     5vw,
     4rem
   ); /* Ensure padding to maintain minimum space */
-  margin-block: clamp(2rem, 5vw, 4rem); /* Responsive top and bottom margins */
+  margin-block: clamp(2rem, 2vw, 4rem); /* Responsive top and bottom margins */
 }
-
+#header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 100%;
+  align-items: center;
+}
 .day-booking {
   position: relative;
 

@@ -2,8 +2,8 @@ import { useState } from "react";
 import "./App.scss";
 import bookingResults from "../../api/bookings_result.json";  // JSON data
 import { CourtBookings, CourtBookingsData } from "./components/CourtBookings";
-import { Drawer, DrawerButton } from "../src/components/Drawer";
-
+import { Drawer } from "../src/components/Drawer";
+import { Header } from "../src/components/Layout/Header";
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleDrawer = () => setIsOpen(!isOpen);
@@ -14,7 +14,7 @@ const App = () => {
 
   return (
     <>
-      <DrawerButton onClick={toggleDrawer} />
+      <Header lastUpdateTime={bookingResults[0].lastUpdated} toggleDrawer={toggleDrawer} />
       <Drawer isOpen={isOpen} is24HrTime={is24HrTime} setIs24HrTime={setIs24HrTime} availableHours={availableHours} setAvailableHours={setAvailableHours} />
       <CourtBookings data={bookingResults as unknown as CourtBookingsData[]} is24HrTime={is24HrTime} availableHours={availableHours} />
     </>

@@ -85,3 +85,27 @@ export function formatAvailableTime(available_time: string): string {
 
     return result.trim();
 }
+
+export const timeAgo = (isoTimestamp: string): string => {
+    const now = new Date();
+    const providedTime = new Date(isoTimestamp);
+
+    // Calculate the difference in milliseconds
+    const differenceInMs = now.getTime() - providedTime.getTime();
+
+    // Convert difference to seconds, minutes, hours, or days
+    const seconds = Math.floor(differenceInMs / 1000);
+    const minutes = Math.floor(seconds / 60);
+    const hours = Math.floor(minutes / 60);
+    const days = Math.floor(hours / 24);
+
+    if (seconds < 60) {
+        return `Updated ${seconds} seconds ago`;
+    } else if (minutes < 60) {
+        return `Updated ${minutes} minutes ago`;
+    } else if (hours < 24) {
+        return `Updated ${hours} hours ago`;
+    } else {
+        return `Updated ${days} days ago`;
+    }
+};
