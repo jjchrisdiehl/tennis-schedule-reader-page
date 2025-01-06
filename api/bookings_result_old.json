@@ -1,7 +1,7 @@
 [
   {
     "date": "20250105",
-    "lastUpdated": "2025-01-06T07:28:58.907Z",
+    "lastUpdated": "2025-01-06T07:38:35.323Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -25,7 +25,7 @@
   },
   {
     "date": "20250106",
-    "lastUpdated": "2025-01-06T07:28:58.927Z",
+    "lastUpdated": "2025-01-06T07:38:35.343Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -93,7 +93,7 @@
   },
   {
     "date": "20250107",
-    "lastUpdated": "2025-01-06T07:28:58.947Z",
+    "lastUpdated": "2025-01-06T07:38:35.365Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -156,7 +156,7 @@
   },
   {
     "date": "20250108",
-    "lastUpdated": "2025-01-06T07:28:58.960Z",
+    "lastUpdated": "2025-01-06T07:38:35.377Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -191,7 +191,7 @@
   },
   {
     "date": "20250109",
-    "lastUpdated": "2025-01-06T07:28:58.974Z",
+    "lastUpdated": "2025-01-06T07:38:35.391Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -221,7 +221,7 @@
   },
   {
     "date": "20250110",
-    "lastUpdated": "2025-01-06T07:28:58.988Z",
+    "lastUpdated": "2025-01-06T07:38:35.408Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -251,7 +251,7 @@
   },
   {
     "date": "20250111",
-    "lastUpdated": "2025-01-06T07:28:58.997Z",
+    "lastUpdated": "2025-01-06T07:38:35.420Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -298,7 +298,7 @@
   },
   {
     "date": "20250112",
-    "lastUpdated": "2025-01-06T07:28:59.010Z",
+    "lastUpdated": "2025-01-06T07:38:35.439Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -319,8 +319,13 @@
           },
           {
             "start_time": 23,
+            "end_time": 23.5,
+            "available_time": 0.5
+          },
+          {
+            "start_time": 23.5,
             "end_time": 24,
-            "available_time": 1
+            "available_time": 0.5
           }
         ]
       },
@@ -343,8 +348,13 @@
           },
           {
             "start_time": 23,
+            "end_time": 23.5,
+            "available_time": 0.5
+          },
+          {
+            "start_time": 23.5,
             "end_time": 24,
-            "available_time": 1
+            "available_time": 0.5
           }
         ]
       },
@@ -367,8 +377,13 @@
           },
           {
             "start_time": 23,
+            "end_time": 23.5,
+            "available_time": 0.5
+          },
+          {
+            "start_time": 23.5,
             "end_time": 24,
-            "available_time": 1
+            "available_time": 0.5
           }
         ]
       },
@@ -381,8 +396,13 @@
           },
           {
             "start_time": 23,
+            "end_time": 23.5,
+            "available_time": 0.5
+          },
+          {
+            "start_time": 23.5,
             "end_time": 24,
-            "available_time": 1
+            "available_time": 0.5
           }
         ]
       },
@@ -395,8 +415,13 @@
           },
           {
             "start_time": 23,
+            "end_time": 23.5,
+            "available_time": 0.5
+          },
+          {
+            "start_time": 23.5,
             "end_time": 24,
-            "available_time": 1
+            "available_time": 0.5
           }
         ]
       },
@@ -409,8 +434,13 @@
           },
           {
             "start_time": 23,
+            "end_time": 23.5,
+            "available_time": 0.5
+          },
+          {
+            "start_time": 23.5,
             "end_time": 24,
-            "available_time": 1
+            "available_time": 0.5
           }
         ]
       }
