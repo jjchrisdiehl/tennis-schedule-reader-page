@@ -1,7 +1,7 @@
 [
   {
     "date": "20250107",
-    "lastUpdated": "2025-01-07T22:49:34.106Z",
+    "lastUpdated": "2025-01-07T23:13:33.234Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -25,7 +25,7 @@
   },
   {
     "date": "20250108",
-    "lastUpdated": "2025-01-07T22:49:34.129Z",
+    "lastUpdated": "2025-01-07T23:13:33.254Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -49,7 +49,7 @@
   },
   {
     "date": "20250109",
-    "lastUpdated": "2025-01-07T22:49:34.152Z",
+    "lastUpdated": "2025-01-07T23:13:33.278Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -67,24 +67,13 @@
         "Court 5": []
       },
       {
-        "Court 6": [
-          {
-            "start_time": 6,
-            "end_time": 6.5,
-            "available_time": 0.5
-          },
-          {
-            "start_time": 6.5,
-            "end_time": 7,
-            "available_time": 0.5
-          }
-        ]
+        "Court 6": []
       }
     ]
   },
   {
     "date": "20250110",
-    "lastUpdated": "2025-01-07T22:49:34.161Z",
+    "lastUpdated": "2025-01-07T23:13:33.286Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -108,7 +97,7 @@
   },
   {
     "date": "20250111",
-    "lastUpdated": "2025-01-07T22:49:34.172Z",
+    "lastUpdated": "2025-01-07T23:13:33.301Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -149,7 +138,7 @@
   },
   {
     "date": "20250112",
-    "lastUpdated": "2025-01-07T22:49:34.185Z",
+    "lastUpdated": "2025-01-07T23:13:33.312Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -214,7 +203,7 @@
   },
   {
     "date": "20250113",
-    "lastUpdated": "2025-01-07T22:49:34.207Z",
+    "lastUpdated": "2025-01-07T23:13:33.330Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -293,7 +282,7 @@
   },
   {
     "date": "20250114",
-    "lastUpdated": "2025-01-07T22:49:34.222Z",
+    "lastUpdated": "2025-01-07T23:13:33.345Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -350,8 +339,8 @@
           },
           {
             "start_time": 14,
-            "end_time": 16,
-            "available_time": 2
+            "end_time": 15,
+            "available_time": 1
           }
         ]
       },
