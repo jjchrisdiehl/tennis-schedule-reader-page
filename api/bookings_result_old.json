@@ -1,7 +1,7 @@
 [
   {
     "date": "20250107",
-    "lastUpdated": "2025-01-07T18:52:32.832Z",
+    "lastUpdated": "2025-01-07T19:11:35.474Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -25,16 +25,10 @@
   },
   {
     "date": "20250108",
-    "lastUpdated": "2025-01-07T18:52:32.857Z",
+    "lastUpdated": "2025-01-07T19:11:35.498Z",
     "Court Bookings": [
       {
-        "Court 1": [
-          {
-            "start_time": 11,
-            "end_time": 12,
-            "available_time": 1
-          }
-        ]
+        "Court 1": []
       },
       {
         "Court 2": []
@@ -66,7 +60,7 @@
   },
   {
     "date": "20250109",
-    "lastUpdated": "2025-01-07T18:52:32.872Z",
+    "lastUpdated": "2025-01-07T19:11:35.514Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -84,19 +78,13 @@
         "Court 5": []
       },
       {
-        "Court 6": [
-          {
-            "start_time": 10.5,
-            "end_time": 11.5,
-            "available_time": 1
-          }
-        ]
+        "Court 6": []
       }
     ]
   },
   {
     "date": "20250110",
-    "lastUpdated": "2025-01-07T18:52:32.894Z",
+    "lastUpdated": "2025-01-07T19:11:35.523Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -126,7 +114,7 @@
   },
   {
     "date": "20250111",
-    "lastUpdated": "2025-01-07T18:52:32.926Z",
+    "lastUpdated": "2025-01-07T19:11:35.540Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -167,7 +155,7 @@
   },
   {
     "date": "20250112",
-    "lastUpdated": "2025-01-07T18:52:32.933Z",
+    "lastUpdated": "2025-01-07T19:11:35.552Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -237,7 +225,7 @@
   },
   {
     "date": "20250113",
-    "lastUpdated": "2025-01-07T18:52:32.946Z",
+    "lastUpdated": "2025-01-07T19:11:35.566Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -332,7 +320,7 @@
   },
   {
     "date": "20250114",
-    "lastUpdated": "2025-01-07T18:52:32.954Z",
+    "lastUpdated": "2025-01-07T19:11:35.582Z",
     "Court Bookings": [
       {
         "Court 1": []
