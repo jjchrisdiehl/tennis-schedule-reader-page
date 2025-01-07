@@ -1,7 +1,7 @@
 [
   {
     "date": "20250107",
-    "lastUpdated": "2025-01-07T21:49:36.020Z",
+    "lastUpdated": "2025-01-07T22:13:45.881Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -25,7 +25,7 @@
   },
   {
     "date": "20250108",
-    "lastUpdated": "2025-01-07T21:49:36.047Z",
+    "lastUpdated": "2025-01-07T22:13:45.903Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -49,7 +49,7 @@
   },
   {
     "date": "20250109",
-    "lastUpdated": "2025-01-07T21:49:36.067Z",
+    "lastUpdated": "2025-01-07T22:13:45.929Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -84,16 +84,10 @@
   },
   {
     "date": "20250110",
-    "lastUpdated": "2025-01-07T21:49:36.079Z",
+    "lastUpdated": "2025-01-07T22:13:45.938Z",
     "Court Bookings": [
       {
-        "Court 1": [
-          {
-            "start_time": 9,
-            "end_time": 10,
-            "available_time": 1
-          }
-        ]
+        "Court 1": []
       },
       {
         "Court 2": []
@@ -114,7 +108,7 @@
   },
   {
     "date": "20250111",
-    "lastUpdated": "2025-01-07T21:49:36.091Z",
+    "lastUpdated": "2025-01-07T22:13:45.953Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -155,7 +149,7 @@
   },
   {
     "date": "20250112",
-    "lastUpdated": "2025-01-07T21:49:36.105Z",
+    "lastUpdated": "2025-01-07T22:13:45.961Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -220,7 +214,7 @@
   },
   {
     "date": "20250113",
-    "lastUpdated": "2025-01-07T21:49:36.119Z",
+    "lastUpdated": "2025-01-07T22:13:45.986Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -299,7 +293,7 @@
   },
   {
     "date": "20250114",
-    "lastUpdated": "2025-01-07T21:49:36.149Z",
+    "lastUpdated": "2025-01-07T22:13:45.995Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -368,6 +362,11 @@
             "start_time": 6.5,
             "end_time": 7,
             "available_time": 0.5
+          },
+          {
+            "start_time": 14,
+            "end_time": 16,
+            "available_time": 2
           }
         ]
       },
