@@ -1,7 +1,7 @@
 [
   {
     "date": "20250108",
-    "lastUpdated": "2025-01-08T21:49:58.236Z",
+    "lastUpdated": "2025-01-08T22:13:34.635Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -25,7 +25,7 @@
   },
   {
     "date": "20250109",
-    "lastUpdated": "2025-01-08T21:49:58.258Z",
+    "lastUpdated": "2025-01-08T22:13:34.658Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -55,7 +55,7 @@
   },
   {
     "date": "20250110",
-    "lastUpdated": "2025-01-08T21:49:58.276Z",
+    "lastUpdated": "2025-01-08T22:13:34.680Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -79,7 +79,7 @@
   },
   {
     "date": "20250111",
-    "lastUpdated": "2025-01-08T21:49:58.288Z",
+    "lastUpdated": "2025-01-08T22:13:34.689Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -135,7 +135,7 @@
   },
   {
     "date": "20250112",
-    "lastUpdated": "2025-01-08T21:49:58.303Z",
+    "lastUpdated": "2025-01-08T22:13:34.707Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -195,7 +195,7 @@
   },
   {
     "date": "20250113",
-    "lastUpdated": "2025-01-08T21:49:58.323Z",
+    "lastUpdated": "2025-01-08T22:13:34.718Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -269,7 +269,7 @@
   },
   {
     "date": "20250114",
-    "lastUpdated": "2025-01-08T21:49:58.333Z",
+    "lastUpdated": "2025-01-08T22:13:34.729Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -327,16 +327,28 @@
   },
   {
     "date": "20250115",
-    "lastUpdated": "2025-01-08T21:49:58.349Z",
+    "lastUpdated": "2025-01-08T22:13:34.739Z",
     "Court Bookings": [
       {
-        "Court 1": []
+        "Court 1": [
+          {
+            "start_time": 13,
+            "end_time": 14,
+            "available_time": 1
+          }
+        ]
       },
       {
         "Court 2": []
       },
       {
-        "Court 3": []
+        "Court 3": [
+          {
+            "start_time": 14,
+            "end_time": 16,
+            "available_time": 2
+          }
+        ]
       },
       {
         "Court 4": [
