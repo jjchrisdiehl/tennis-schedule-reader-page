@@ -1,7 +1,7 @@
 [
   {
     "date": "20250109",
-    "lastUpdated": "2025-01-09T14:49:57.205Z",
+    "lastUpdated": "2025-01-09T15:15:28.457Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -16,13 +16,7 @@
         "Court 4": []
       },
       {
-        "Court 5": [
-          {
-            "start_time": 7,
-            "end_time": 8,
-            "available_time": 1
-          }
-        ]
+        "Court 5": []
       },
       {
         "Court 6": []
@@ -31,7 +25,7 @@
   },
   {
     "date": "20250110",
-    "lastUpdated": "2025-01-09T14:49:57.226Z",
+    "lastUpdated": "2025-01-09T15:15:28.479Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -55,7 +49,7 @@
   },
   {
     "date": "20250111",
-    "lastUpdated": "2025-01-09T14:49:57.252Z",
+    "lastUpdated": "2025-01-09T15:15:28.499Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -85,7 +79,7 @@
   },
   {
     "date": "20250112",
-    "lastUpdated": "2025-01-09T14:49:57.262Z",
+    "lastUpdated": "2025-01-09T15:15:28.509Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -150,7 +144,7 @@
   },
   {
     "date": "20250113",
-    "lastUpdated": "2025-01-09T14:49:57.276Z",
+    "lastUpdated": "2025-01-09T15:15:28.529Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -229,7 +223,7 @@
   },
   {
     "date": "20250114",
-    "lastUpdated": "2025-01-09T14:49:57.290Z",
+    "lastUpdated": "2025-01-09T15:15:28.546Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -287,7 +281,7 @@
   },
   {
     "date": "20250115",
-    "lastUpdated": "2025-01-09T14:49:57.301Z",
+    "lastUpdated": "2025-01-09T15:15:28.561Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -364,7 +358,7 @@
   },
   {
     "date": "20250116",
-    "lastUpdated": "2025-01-09T14:49:57.317Z",
+    "lastUpdated": "2025-01-09T15:15:28.576Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -384,8 +378,8 @@
           },
           {
             "start_time": 6.5,
-            "end_time": 11.5,
-            "available_time": 5
+            "end_time": 7,
+            "available_time": 0.5
           }
         ]
       },
@@ -398,8 +392,8 @@
           },
           {
             "start_time": 6.5,
-            "end_time": 11.5,
-            "available_time": 5
+            "end_time": 7,
+            "available_time": 0.5
           }
         ]
       },
