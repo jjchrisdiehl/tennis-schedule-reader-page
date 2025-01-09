@@ -1,7 +1,7 @@
 [
   {
     "date": "20250109",
-    "lastUpdated": "2025-01-09T20:16:15.066Z",
+    "lastUpdated": "2025-01-09T20:37:32.198Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -25,7 +25,7 @@
   },
   {
     "date": "20250110",
-    "lastUpdated": "2025-01-09T20:16:15.088Z",
+    "lastUpdated": "2025-01-09T20:37:32.219Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -49,7 +49,7 @@
   },
   {
     "date": "20250111",
-    "lastUpdated": "2025-01-09T20:16:15.106Z",
+    "lastUpdated": "2025-01-09T20:37:32.238Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -79,7 +79,7 @@
   },
   {
     "date": "20250112",
-    "lastUpdated": "2025-01-09T20:16:15.115Z",
+    "lastUpdated": "2025-01-09T20:37:32.253Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -144,7 +144,7 @@
   },
   {
     "date": "20250113",
-    "lastUpdated": "2025-01-09T20:16:15.135Z",
+    "lastUpdated": "2025-01-09T20:37:32.281Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -223,7 +223,7 @@
   },
   {
     "date": "20250114",
-    "lastUpdated": "2025-01-09T20:16:15.150Z",
+    "lastUpdated": "2025-01-09T20:37:32.291Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -281,7 +281,7 @@
   },
   {
     "date": "20250115",
-    "lastUpdated": "2025-01-09T20:16:15.165Z",
+    "lastUpdated": "2025-01-09T20:37:32.308Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -302,16 +302,6 @@
           {
             "start_time": 6.5,
             "end_time": 7,
-            "available_time": 0.5
-          },
-          {
-            "start_time": 21.5,
-            "end_time": 22.5,
-            "available_time": 1
-          },
-          {
-            "start_time": 22.5,
-            "end_time": 23,
             "available_time": 0.5
           }
         ]
@@ -347,7 +337,7 @@
   },
   {
     "date": "20250116",
-    "lastUpdated": "2025-01-09T20:16:15.175Z",
+    "lastUpdated": "2025-01-09T20:37:32.321Z",
     "Court Bookings": [
       {
         "Court 1": [
