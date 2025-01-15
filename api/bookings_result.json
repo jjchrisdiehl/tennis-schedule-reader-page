@@ -1,7 +1,7 @@
 [
   {
     "date": "20250114",
-    "lastUpdated": "2025-01-15T02:46:40.519Z",
+    "lastUpdated": "2025-01-15T03:21:42.647Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -25,7 +25,7 @@
   },
   {
     "date": "20250115",
-    "lastUpdated": "2025-01-15T02:46:40.542Z",
+    "lastUpdated": "2025-01-15T03:21:42.670Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -55,7 +55,7 @@
   },
   {
     "date": "20250116",
-    "lastUpdated": "2025-01-15T02:46:40.560Z",
+    "lastUpdated": "2025-01-15T03:21:42.688Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -73,7 +73,18 @@
         "Court 3": []
       },
       {
-        "Court 4": []
+        "Court 4": [
+          {
+            "start_time": 8,
+            "end_time": 9,
+            "available_time": 1
+          },
+          {
+            "start_time": 9,
+            "end_time": 9.5,
+            "available_time": 0.5
+          }
+        ]
       },
       {
         "Court 5": []
@@ -91,7 +102,7 @@
   },
   {
     "date": "20250117",
-    "lastUpdated": "2025-01-15T02:46:40.569Z",
+    "lastUpdated": "2025-01-15T03:21:42.698Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -121,7 +132,7 @@
   },
   {
     "date": "20250118",
-    "lastUpdated": "2025-01-15T02:46:40.586Z",
+    "lastUpdated": "2025-01-15T03:21:42.713Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -151,7 +162,7 @@
   },
   {
     "date": "20250119",
-    "lastUpdated": "2025-01-15T02:46:40.600Z",
+    "lastUpdated": "2025-01-15T03:21:42.734Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -205,7 +216,7 @@
   },
   {
     "date": "20250120",
-    "lastUpdated": "2025-01-15T02:46:40.614Z",
+    "lastUpdated": "2025-01-15T03:21:42.745Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -305,7 +316,7 @@
   },
   {
     "date": "20250121",
-    "lastUpdated": "2025-01-15T02:46:40.624Z",
+    "lastUpdated": "2025-01-15T03:21:42.754Z",
     "Court Bookings": [
       {
         "Court 1": [
