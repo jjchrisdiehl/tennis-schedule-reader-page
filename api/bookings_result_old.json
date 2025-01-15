@@ -1,7 +1,7 @@
 [
   {
     "date": "20250115",
-    "lastUpdated": "2025-01-15T18:41:03.081Z",
+    "lastUpdated": "2025-01-15T18:50:06.293Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -25,7 +25,7 @@
   },
   {
     "date": "20250116",
-    "lastUpdated": "2025-01-15T18:41:03.108Z",
+    "lastUpdated": "2025-01-15T18:50:06.316Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -76,7 +76,7 @@
   },
   {
     "date": "20250117",
-    "lastUpdated": "2025-01-15T18:41:03.123Z",
+    "lastUpdated": "2025-01-15T18:50:06.334Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -117,7 +117,7 @@
   },
   {
     "date": "20250118",
-    "lastUpdated": "2025-01-15T18:41:03.138Z",
+    "lastUpdated": "2025-01-15T18:50:06.350Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -147,7 +147,7 @@
   },
   {
     "date": "20250119",
-    "lastUpdated": "2025-01-15T18:41:03.153Z",
+    "lastUpdated": "2025-01-15T18:50:06.366Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -201,7 +201,7 @@
   },
   {
     "date": "20250120",
-    "lastUpdated": "2025-01-15T18:41:03.165Z",
+    "lastUpdated": "2025-01-15T18:50:06.379Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -291,7 +291,7 @@
   },
   {
     "date": "20250121",
-    "lastUpdated": "2025-01-15T18:41:03.175Z",
+    "lastUpdated": "2025-01-15T18:50:06.393Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -303,7 +303,18 @@
         "Court 3": []
       },
       {
-        "Court 4": []
+        "Court 4": [
+          {
+            "start_time": 6,
+            "end_time": 6.5,
+            "available_time": 0.5
+          },
+          {
+            "start_time": 6.5,
+            "end_time": 7,
+            "available_time": 0.5
+          }
+        ]
       },
       {
         "Court 5": [
@@ -337,7 +348,7 @@
   },
   {
     "date": "20250122",
-    "lastUpdated": "2025-01-15T18:41:03.184Z",
+    "lastUpdated": "2025-01-15T18:50:06.401Z",
     "Court Bookings": [
       {
         "Court 1": [
