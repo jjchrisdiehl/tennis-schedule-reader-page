@@ -1,31 +1,7 @@
 [
   {
-    "date": "20250114",
-    "lastUpdated": "2025-01-15T07:49:38.234Z",
-    "Court Bookings": [
-      {
-        "Court 1": []
-      },
-      {
-        "Court 2": []
-      },
-      {
-        "Court 3": []
-      },
-      {
-        "Court 4": []
-      },
-      {
-        "Court 5": []
-      },
-      {
-        "Court 6": []
-      }
-    ]
-  },
-  {
     "date": "20250115",
-    "lastUpdated": "2025-01-15T07:49:38.258Z",
+    "lastUpdated": "2025-01-15T08:18:32.450Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -49,7 +25,7 @@
   },
   {
     "date": "20250116",
-    "lastUpdated": "2025-01-15T07:49:38.276Z",
+    "lastUpdated": "2025-01-15T08:18:32.474Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -94,19 +70,13 @@
         "Court 5": []
       },
       {
-        "Court 6": [
-          {
-            "start_time": 7,
-            "end_time": 8,
-            "available_time": 1
-          }
-        ]
+        "Court 6": []
       }
     ]
   },
   {
     "date": "20250117",
-    "lastUpdated": "2025-01-15T07:49:38.285Z",
+    "lastUpdated": "2025-01-15T08:18:32.492Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -142,7 +112,7 @@
   },
   {
     "date": "20250118",
-    "lastUpdated": "2025-01-15T07:49:38.299Z",
+    "lastUpdated": "2025-01-15T08:18:32.507Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -172,7 +142,7 @@
   },
   {
     "date": "20250119",
-    "lastUpdated": "2025-01-15T07:49:38.319Z",
+    "lastUpdated": "2025-01-15T08:18:32.526Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -226,7 +196,7 @@
   },
   {
     "date": "20250120",
-    "lastUpdated": "2025-01-15T07:49:38.331Z",
+    "lastUpdated": "2025-01-15T08:18:32.539Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -316,7 +286,7 @@
   },
   {
     "date": "20250121",
-    "lastUpdated": "2025-01-15T07:49:38.351Z",
+    "lastUpdated": "2025-01-15T08:18:32.549Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -369,6 +339,30 @@
             "available_time": 1
           }
         ]
+      }
+    ]
+  },
+  {
+    "date": "20250122",
+    "lastUpdated": "2025-01-15T08:18:32.564Z",
+    "Court Bookings": [
+      {
+        "Court 1": []
+      },
+      {
+        "Court 2": []
+      },
+      {
+        "Court 3": []
+      },
+      {
+        "Court 4": []
+      },
+      {
+        "Court 5": []
+      },
+      {
+        "Court 6": []
       }
     ]
   }
