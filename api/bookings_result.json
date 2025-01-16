@@ -1,31 +1,7 @@
 [
   {
-    "date": "20250115",
-    "lastUpdated": "2025-01-16T07:49:53.377Z",
-    "Court Bookings": [
-      {
-        "Court 1": []
-      },
-      {
-        "Court 2": []
-      },
-      {
-        "Court 3": []
-      },
-      {
-        "Court 4": []
-      },
-      {
-        "Court 5": []
-      },
-      {
-        "Court 6": []
-      }
-    ]
-  },
-  {
     "date": "20250116",
-    "lastUpdated": "2025-01-16T07:49:53.403Z",
+    "lastUpdated": "2025-01-16T08:18:12.555Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -60,7 +36,7 @@
   },
   {
     "date": "20250117",
-    "lastUpdated": "2025-01-16T07:49:53.418Z",
+    "lastUpdated": "2025-01-16T08:18:12.576Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -101,7 +77,7 @@
   },
   {
     "date": "20250118",
-    "lastUpdated": "2025-01-16T07:49:53.427Z",
+    "lastUpdated": "2025-01-16T08:18:12.594Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -137,7 +113,7 @@
   },
   {
     "date": "20250119",
-    "lastUpdated": "2025-01-16T07:49:53.447Z",
+    "lastUpdated": "2025-01-16T08:18:12.629Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -191,7 +167,7 @@
   },
   {
     "date": "20250120",
-    "lastUpdated": "2025-01-16T07:49:53.460Z",
+    "lastUpdated": "2025-01-16T08:18:12.650Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -286,7 +262,7 @@
   },
   {
     "date": "20250121",
-    "lastUpdated": "2025-01-16T07:49:53.472Z",
+    "lastUpdated": "2025-01-16T08:18:12.663Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -337,7 +313,7 @@
   },
   {
     "date": "20250122",
-    "lastUpdated": "2025-01-16T07:49:53.492Z",
+    "lastUpdated": "2025-01-16T08:18:12.674Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -431,6 +407,30 @@
             "available_time": 1
           }
         ]
+      }
+    ]
+  },
+  {
+    "date": "20250123",
+    "lastUpdated": "2025-01-16T08:18:12.682Z",
+    "Court Bookings": [
+      {
+        "Court 1": []
+      },
+      {
+        "Court 2": []
+      },
+      {
+        "Court 3": []
+      },
+      {
+        "Court 4": []
+      },
+      {
+        "Court 5": []
+      },
+      {
+        "Court 6": []
       }
     ]
   }
