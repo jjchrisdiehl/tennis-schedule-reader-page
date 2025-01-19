@@ -1,16 +1,10 @@
 [
   {
     "date": "20250119",
-    "lastUpdated": "2025-01-19T20:36:57.931Z",
+    "lastUpdated": "2025-01-19T20:49:50.402Z",
     "Court Bookings": [
       {
-        "Court 1": [
-          {
-            "start_time": 22.5,
-            "end_time": 23.5,
-            "available_time": 1
-          }
-        ]
+        "Court 1": []
       },
       {
         "Court 2": [
@@ -55,7 +49,7 @@
   },
   {
     "date": "20250120",
-    "lastUpdated": "2025-01-19T20:36:57.956Z",
+    "lastUpdated": "2025-01-19T20:49:50.427Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -180,7 +174,7 @@
   },
   {
     "date": "20250121",
-    "lastUpdated": "2025-01-19T20:36:57.982Z",
+    "lastUpdated": "2025-01-19T20:49:50.451Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -248,7 +242,7 @@
   },
   {
     "date": "20250122",
-    "lastUpdated": "2025-01-19T20:36:57.990Z",
+    "lastUpdated": "2025-01-19T20:49:50.460Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -299,7 +293,7 @@
   },
   {
     "date": "20250123",
-    "lastUpdated": "2025-01-19T20:36:58.003Z",
+    "lastUpdated": "2025-01-19T20:49:50.475Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -344,24 +338,13 @@
         ]
       },
       {
-        "Court 6": [
-          {
-            "start_time": 6,
-            "end_time": 6.5,
-            "available_time": 0.5
-          },
-          {
-            "start_time": 6.5,
-            "end_time": 7,
-            "available_time": 0.5
-          }
-        ]
+        "Court 6": []
       }
     ]
   },
   {
     "date": "20250124",
-    "lastUpdated": "2025-01-19T20:36:58.018Z",
+    "lastUpdated": "2025-01-19T20:49:50.487Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -397,7 +380,7 @@
   },
   {
     "date": "20250125",
-    "lastUpdated": "2025-01-19T20:36:58.027Z",
+    "lastUpdated": "2025-01-19T20:49:50.496Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -421,7 +404,7 @@
   },
   {
     "date": "20250126",
-    "lastUpdated": "2025-01-19T20:36:58.036Z",
+    "lastUpdated": "2025-01-19T20:49:50.505Z",
     "Court Bookings": [
       {
         "Court 1": []
