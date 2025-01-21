@@ -1,7 +1,7 @@
 [
   {
     "date": "20250121",
-    "lastUpdated": "2025-01-21T17:49:38.279Z",
+    "lastUpdated": "2025-01-21T18:19:46.681Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -31,7 +31,7 @@
   },
   {
     "date": "20250122",
-    "lastUpdated": "2025-01-21T17:49:38.304Z",
+    "lastUpdated": "2025-01-21T18:19:46.705Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -88,7 +88,7 @@
   },
   {
     "date": "20250123",
-    "lastUpdated": "2025-01-21T17:49:38.321Z",
+    "lastUpdated": "2025-01-21T18:19:46.723Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -140,7 +140,7 @@
   },
   {
     "date": "20250124",
-    "lastUpdated": "2025-01-21T17:49:38.334Z",
+    "lastUpdated": "2025-01-21T18:19:46.736Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -170,7 +170,7 @@
   },
   {
     "date": "20250125",
-    "lastUpdated": "2025-01-21T17:49:38.353Z",
+    "lastUpdated": "2025-01-21T18:19:46.755Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -194,7 +194,7 @@
   },
   {
     "date": "20250126",
-    "lastUpdated": "2025-01-21T17:49:38.361Z",
+    "lastUpdated": "2025-01-21T18:19:46.763Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -253,7 +253,7 @@
   },
   {
     "date": "20250127",
-    "lastUpdated": "2025-01-21T17:49:38.375Z",
+    "lastUpdated": "2025-01-21T18:19:46.778Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -343,7 +343,7 @@
   },
   {
     "date": "20250128",
-    "lastUpdated": "2025-01-21T17:49:38.385Z",
+    "lastUpdated": "2025-01-21T18:19:46.792Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -352,7 +352,18 @@
         "Court 2": []
       },
       {
-        "Court 3": []
+        "Court 3": [
+          {
+            "start_time": 8,
+            "end_time": 9,
+            "available_time": 1
+          },
+          {
+            "start_time": 9,
+            "end_time": 9.5,
+            "available_time": 0.5
+          }
+        ]
       },
       {
         "Court 4": [
