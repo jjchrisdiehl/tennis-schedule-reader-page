@@ -1,7 +1,7 @@
 [
   {
     "date": "20250124",
-    "lastUpdated": "2025-01-24T20:29:11.076Z",
+    "lastUpdated": "2025-01-24T20:39:17.397Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -31,7 +31,7 @@
   },
   {
     "date": "20250125",
-    "lastUpdated": "2025-01-24T20:29:11.098Z",
+    "lastUpdated": "2025-01-24T20:39:17.420Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -55,7 +55,7 @@
   },
   {
     "date": "20250126",
-    "lastUpdated": "2025-01-24T20:29:11.123Z",
+    "lastUpdated": "2025-01-24T20:39:17.443Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -77,6 +77,16 @@
       },
       {
         "Court 3": [
+          {
+            "start_time": 6,
+            "end_time": 6.5,
+            "available_time": 0.5
+          },
+          {
+            "start_time": 6.5,
+            "end_time": 7,
+            "available_time": 0.5
+          },
           {
             "start_time": 22.5,
             "end_time": 23.5,
@@ -109,7 +119,7 @@
   },
   {
     "date": "20250127",
-    "lastUpdated": "2025-01-24T20:29:11.136Z",
+    "lastUpdated": "2025-01-24T20:39:17.458Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -199,7 +209,7 @@
   },
   {
     "date": "20250128",
-    "lastUpdated": "2025-01-24T20:29:11.152Z",
+    "lastUpdated": "2025-01-24T20:39:17.475Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -234,7 +244,7 @@
   },
   {
     "date": "20250129",
-    "lastUpdated": "2025-01-24T20:29:11.162Z",
+    "lastUpdated": "2025-01-24T20:39:17.488Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -291,7 +301,7 @@
   },
   {
     "date": "20250130",
-    "lastUpdated": "2025-01-24T20:29:11.176Z",
+    "lastUpdated": "2025-01-24T20:39:17.498Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -332,7 +342,7 @@
   },
   {
     "date": "20250131",
-    "lastUpdated": "2025-01-24T20:29:11.195Z",
+    "lastUpdated": "2025-01-24T20:39:17.518Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -370,8 +380,13 @@
           },
           {
             "start_time": 12,
+            "end_time": 12.5,
+            "available_time": 0.5
+          },
+          {
+            "start_time": 12.5,
             "end_time": 18,
-            "available_time": 6
+            "available_time": 5.5
           }
         ]
       }
