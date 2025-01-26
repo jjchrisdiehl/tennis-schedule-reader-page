@@ -1,7 +1,7 @@
 [
   {
     "date": "20250126",
-    "lastUpdated": "2025-01-26T16:32:46.953Z",
+    "lastUpdated": "2025-01-26T16:49:57.742Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -55,7 +55,7 @@
   },
   {
     "date": "20250127",
-    "lastUpdated": "2025-01-26T16:32:46.980Z",
+    "lastUpdated": "2025-01-26T16:49:57.766Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -160,7 +160,7 @@
   },
   {
     "date": "20250128",
-    "lastUpdated": "2025-01-26T16:32:46.997Z",
+    "lastUpdated": "2025-01-26T16:49:57.785Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -201,7 +201,7 @@
   },
   {
     "date": "20250129",
-    "lastUpdated": "2025-01-26T16:32:47.011Z",
+    "lastUpdated": "2025-01-26T16:49:57.800Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -245,16 +245,6 @@
             "start_time": 8,
             "end_time": 9,
             "available_time": 1
-          },
-          {
-            "start_time": 9,
-            "end_time": 9.5,
-            "available_time": 0.5
-          },
-          {
-            "start_time": 9.5,
-            "end_time": 10,
-            "available_time": 0.5
           }
         ]
       }
@@ -262,7 +252,7 @@
   },
   {
     "date": "20250130",
-    "lastUpdated": "2025-01-26T16:32:47.030Z",
+    "lastUpdated": "2025-01-26T16:49:57.812Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -297,7 +287,7 @@
   },
   {
     "date": "20250131",
-    "lastUpdated": "2025-01-26T16:32:47.046Z",
+    "lastUpdated": "2025-01-26T16:49:57.826Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -321,7 +311,7 @@
   },
   {
     "date": "20250201",
-    "lastUpdated": "2025-01-26T16:32:47.052Z",
+    "lastUpdated": "2025-01-26T16:49:57.837Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -345,7 +335,7 @@
   },
   {
     "date": "20250202",
-    "lastUpdated": "2025-01-26T16:32:47.068Z",
+    "lastUpdated": "2025-01-26T16:49:57.855Z",
     "Court Bookings": [
       {
         "Court 1": []
