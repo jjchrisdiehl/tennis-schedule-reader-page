@@ -1,7 +1,7 @@
 [
   {
     "date": "20250126",
-    "lastUpdated": "2025-01-27T07:27:26.446Z",
+    "lastUpdated": "2025-01-27T07:37:09.381Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -25,7 +25,7 @@
   },
   {
     "date": "20250127",
-    "lastUpdated": "2025-01-27T07:27:26.470Z",
+    "lastUpdated": "2025-01-27T07:37:09.409Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -115,7 +115,7 @@
   },
   {
     "date": "20250128",
-    "lastUpdated": "2025-01-27T07:27:26.491Z",
+    "lastUpdated": "2025-01-27T07:37:09.425Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -180,6 +180,16 @@
             "start_time": 7.5,
             "end_time": 8,
             "available_time": 0.5
+          },
+          {
+            "start_time": 8,
+            "end_time": 8.5,
+            "available_time": 0.5
+          },
+          {
+            "start_time": 8.5,
+            "end_time": 9,
+            "available_time": 0.5
           }
         ]
       }
@@ -187,7 +197,7 @@
   },
   {
     "date": "20250129",
-    "lastUpdated": "2025-01-27T07:27:26.505Z",
+    "lastUpdated": "2025-01-27T07:37:09.442Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -238,7 +248,7 @@
   },
   {
     "date": "20250130",
-    "lastUpdated": "2025-01-27T07:27:26.523Z",
+    "lastUpdated": "2025-01-27T07:37:09.457Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -273,7 +283,7 @@
   },
   {
     "date": "20250131",
-    "lastUpdated": "2025-01-27T07:27:26.536Z",
+    "lastUpdated": "2025-01-27T07:37:09.468Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -303,7 +313,7 @@
   },
   {
     "date": "20250201",
-    "lastUpdated": "2025-01-27T07:27:26.544Z",
+    "lastUpdated": "2025-01-27T07:37:09.480Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -327,7 +337,7 @@
   },
   {
     "date": "20250202",
-    "lastUpdated": "2025-01-27T07:27:26.561Z",
+    "lastUpdated": "2025-01-27T07:37:09.499Z",
     "Court Bookings": [
       {
         "Court 1": [
