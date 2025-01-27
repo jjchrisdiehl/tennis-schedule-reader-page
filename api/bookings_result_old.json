@@ -1,7 +1,7 @@
 [
   {
     "date": "20250127",
-    "lastUpdated": "2025-01-27T19:50:04.039Z",
+    "lastUpdated": "2025-01-27T20:15:49.492Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -25,7 +25,7 @@
   },
   {
     "date": "20250128",
-    "lastUpdated": "2025-01-27T19:50:04.070Z",
+    "lastUpdated": "2025-01-27T20:15:49.520Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -128,7 +128,7 @@
   },
   {
     "date": "20250129",
-    "lastUpdated": "2025-01-27T19:50:04.090Z",
+    "lastUpdated": "2025-01-27T20:15:49.536Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -168,7 +168,7 @@
   },
   {
     "date": "20250130",
-    "lastUpdated": "2025-01-27T19:50:04.105Z",
+    "lastUpdated": "2025-01-27T20:15:49.564Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -203,7 +203,7 @@
   },
   {
     "date": "20250131",
-    "lastUpdated": "2025-01-27T19:50:04.121Z",
+    "lastUpdated": "2025-01-27T20:15:49.582Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -243,7 +243,7 @@
   },
   {
     "date": "20250201",
-    "lastUpdated": "2025-01-27T19:50:04.132Z",
+    "lastUpdated": "2025-01-27T20:15:49.594Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -267,7 +267,7 @@
   },
   {
     "date": "20250202",
-    "lastUpdated": "2025-01-27T19:50:04.144Z",
+    "lastUpdated": "2025-01-27T20:15:49.608Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -337,7 +337,7 @@
   },
   {
     "date": "20250203",
-    "lastUpdated": "2025-01-27T19:50:04.151Z",
+    "lastUpdated": "2025-01-27T20:15:49.628Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -387,10 +387,22 @@
         ]
       },
       {
-        "Court 4": []
+        "Court 4": [
+          {
+            "start_time": 12,
+            "end_time": 13,
+            "available_time": 1
+          }
+        ]
       },
       {
-        "Court 5": []
+        "Court 5": [
+          {
+            "start_time": 12,
+            "end_time": 13,
+            "available_time": 1
+          }
+        ]
       },
       {
         "Court 6": [
