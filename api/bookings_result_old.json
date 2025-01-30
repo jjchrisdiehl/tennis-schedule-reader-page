@@ -1,7 +1,7 @@
 [
   {
     "date": "20250130",
-    "lastUpdated": "2025-01-30T17:29:16.541Z",
+    "lastUpdated": "2025-01-30T17:39:30.820Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -25,7 +25,7 @@
   },
   {
     "date": "20250131",
-    "lastUpdated": "2025-01-30T17:29:16.567Z",
+    "lastUpdated": "2025-01-30T17:39:30.847Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -75,7 +75,7 @@
   },
   {
     "date": "20250201",
-    "lastUpdated": "2025-01-30T17:29:16.584Z",
+    "lastUpdated": "2025-01-30T17:39:30.865Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -99,7 +99,7 @@
   },
   {
     "date": "20250202",
-    "lastUpdated": "2025-01-30T17:29:16.594Z",
+    "lastUpdated": "2025-01-30T17:39:30.875Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -158,7 +158,7 @@
   },
   {
     "date": "20250203",
-    "lastUpdated": "2025-01-30T17:29:16.614Z",
+    "lastUpdated": "2025-01-30T17:39:30.891Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -248,7 +248,7 @@
   },
   {
     "date": "20250204",
-    "lastUpdated": "2025-01-30T17:29:16.624Z",
+    "lastUpdated": "2025-01-30T17:39:30.910Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -289,7 +289,7 @@
   },
   {
     "date": "20250205",
-    "lastUpdated": "2025-01-30T17:29:16.635Z",
+    "lastUpdated": "2025-01-30T17:39:30.926Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -341,7 +341,7 @@
   },
   {
     "date": "20250206",
-    "lastUpdated": "2025-01-30T17:29:16.645Z",
+    "lastUpdated": "2025-01-30T17:39:30.940Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -350,7 +350,18 @@
         "Court 2": []
       },
       {
-        "Court 3": []
+        "Court 3": [
+          {
+            "start_time": 8,
+            "end_time": 9,
+            "available_time": 1
+          },
+          {
+            "start_time": 9,
+            "end_time": 9.5,
+            "available_time": 0.5
+          }
+        ]
       },
       {
         "Court 4": [
