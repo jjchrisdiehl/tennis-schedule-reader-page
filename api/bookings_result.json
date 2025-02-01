@@ -1,7 +1,7 @@
 [
   {
     "date": "20250201",
-    "lastUpdated": "2025-02-01T13:49:45.854Z",
+    "lastUpdated": "2025-02-01T14:11:56.321Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -25,7 +25,7 @@
   },
   {
     "date": "20250202",
-    "lastUpdated": "2025-02-01T13:49:45.878Z",
+    "lastUpdated": "2025-02-01T14:11:56.345Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -90,7 +90,7 @@
   },
   {
     "date": "20250203",
-    "lastUpdated": "2025-02-01T13:49:45.896Z",
+    "lastUpdated": "2025-02-01T14:11:56.364Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -175,7 +175,7 @@
   },
   {
     "date": "20250204",
-    "lastUpdated": "2025-02-01T13:49:45.909Z",
+    "lastUpdated": "2025-02-01T14:11:56.378Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -205,7 +205,7 @@
   },
   {
     "date": "20250205",
-    "lastUpdated": "2025-02-01T13:49:45.924Z",
+    "lastUpdated": "2025-02-01T14:11:56.393Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -251,7 +251,7 @@
   },
   {
     "date": "20250206",
-    "lastUpdated": "2025-02-01T13:49:45.937Z",
+    "lastUpdated": "2025-02-01T14:11:56.406Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -286,7 +286,7 @@
   },
   {
     "date": "20250207",
-    "lastUpdated": "2025-02-01T13:49:45.947Z",
+    "lastUpdated": "2025-02-01T14:11:56.428Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -322,7 +322,7 @@
   },
   {
     "date": "20250208",
-    "lastUpdated": "2025-02-01T13:49:45.954Z",
+    "lastUpdated": "2025-02-01T14:11:56.435Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -337,10 +337,22 @@
         "Court 4": []
       },
       {
-        "Court 5": []
+        "Court 5": [
+          {
+            "start_time": 6,
+            "end_time": 7,
+            "available_time": 1
+          }
+        ]
       },
       {
-        "Court 6": []
+        "Court 6": [
+          {
+            "start_time": 6,
+            "end_time": 7,
+            "available_time": 1
+          }
+        ]
       }
     ]
   }
