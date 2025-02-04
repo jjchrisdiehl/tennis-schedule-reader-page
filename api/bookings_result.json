@@ -1,7 +1,7 @@
 [
   {
     "date": "20250204",
-    "lastUpdated": "2025-02-04T19:49:47.619Z",
+    "lastUpdated": "2025-02-04T20:15:41.514Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -25,7 +25,7 @@
   },
   {
     "date": "20250205",
-    "lastUpdated": "2025-02-04T19:49:47.643Z",
+    "lastUpdated": "2025-02-04T20:15:41.538Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -66,7 +66,7 @@
   },
   {
     "date": "20250206",
-    "lastUpdated": "2025-02-04T19:49:47.659Z",
+    "lastUpdated": "2025-02-04T20:15:41.554Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -90,7 +90,7 @@
   },
   {
     "date": "20250207",
-    "lastUpdated": "2025-02-04T19:49:47.672Z",
+    "lastUpdated": "2025-02-04T20:15:41.563Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -125,7 +125,7 @@
   },
   {
     "date": "20250208",
-    "lastUpdated": "2025-02-04T19:49:47.687Z",
+    "lastUpdated": "2025-02-04T20:15:41.586Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -137,7 +137,18 @@
         "Court 3": []
       },
       {
-        "Court 4": []
+        "Court 4": [
+          {
+            "start_time": 6,
+            "end_time": 6.5,
+            "available_time": 0.5
+          },
+          {
+            "start_time": 6.5,
+            "end_time": 7,
+            "available_time": 0.5
+          }
+        ]
       },
       {
         "Court 5": []
@@ -149,7 +160,7 @@
   },
   {
     "date": "20250209",
-    "lastUpdated": "2025-02-04T19:49:47.706Z",
+    "lastUpdated": "2025-02-04T20:15:41.598Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -208,7 +219,7 @@
   },
   {
     "date": "20250210",
-    "lastUpdated": "2025-02-04T19:49:47.719Z",
+    "lastUpdated": "2025-02-04T20:15:41.612Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -302,7 +313,7 @@
   },
   {
     "date": "20250211",
-    "lastUpdated": "2025-02-04T19:49:47.726Z",
+    "lastUpdated": "2025-02-04T20:15:41.621Z",
     "Court Bookings": [
       {
         "Court 1": []
