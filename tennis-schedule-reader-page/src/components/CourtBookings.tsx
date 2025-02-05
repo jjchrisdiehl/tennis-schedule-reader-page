@@ -1,3 +1,4 @@
+import { useSettings } from "../contexts/SettingsContext";
 import { Booking, BookingInterface } from "./Booking";
 
 // Represents a court with dynamic court names as keys
@@ -8,19 +9,21 @@ export type Court = {
 // Represents the structure of each day's booking data
 export interface CourtBookingsData {
     date: string;
-    lastUpdated: string;
     "Court Bookings": Court[];
 }
 
 export function CourtBookings({
     data,
-    is24HrTime,
-    availableHours,
 }: {
-    data: CourtBookingsData[];
-    is24HrTime: boolean;
-    availableHours: number[];
+        data: CourtBookingsData[];
 }) {
+
+    const {
+        is24HrTime,
+        availableHours,
+    } = useSettings();
+
+
     function formatDate(dateString: string): string {
         const date = new Date(
             Number(dateString.substring(0, 4)),
