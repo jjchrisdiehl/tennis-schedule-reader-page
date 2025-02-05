@@ -23,7 +23,7 @@ export function Booking({ courtName, bookings, is24HrTime }: BookingProps) {
                     <p><span>Time:</span> {formatTime(booking.start_time, is24HrTime)} - {formatTime(booking.end_time, is24HrTime)}</p>
                     <p><span>Length:</span> {formatAvailableTime(booking.available_time)}</p>
                     <div className="booking-card__footer">
-                        <button className="booking-card__button">Book now</button>
+                        <a href="https://www.thetenniscentre.ca/langley/book-court/" target="_blank" className="booking-card__button-wrapper"><button className="booking-card__button">Book now</button></a>
                     </div>
                 </div>
             ))}
