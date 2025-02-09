@@ -5,15 +5,14 @@ import { useSettings } from "../../contexts/SettingsContext";
 
 export function Header() {
     const {
-        isDrawerOpen,
-        setIsDrawerOpen,
+        dispatch,
         lastUpdateTime,
     } = useSettings();
 
     return (
         <div id={"header"}>
             <div>{timeAgo(lastUpdateTime)}</div>
-            <DrawerButton onClick={() => setIsDrawerOpen(!isDrawerOpen)} />
+            <DrawerButton onClick={() => dispatch({ type: "TOGGLE_DRAWER" })} />
         </div>
     )
 }

@@ -2,18 +2,18 @@ import Slider from "../Controllers/Slider/Slider";
 import { SwitchControl } from "../Controllers/Switch/SwitchControl";
 import { DrawerItem } from "./DrawerItem";
 import { useSettings } from '../../contexts/SettingsContext';
+import { SetStateAction } from "react";
 
 // Define the props type for the Drawer component
 interface DrawerContentProps {
     is24HrTime: boolean;
-    setIs24HrTime: React.Dispatch<React.SetStateAction<boolean>>;
+    setIs24HrTime: React.Dispatch<SetStateAction<boolean>>;
     availableHours: number[];
-    setAvailableHours: React.Dispatch<React.SetStateAction<number[]>>;
+    setAvailableHours: (newHours: number[]) => void; // Change here
 }
 
 // DrawerContents Component
 const DrawerContents: React.FC<DrawerContentProps> = ({ is24HrTime, setIs24HrTime, availableHours, setAvailableHours }) => {
-
     return (
         <div className="Drawer__Contents">
             <h2>Settings</h2>
@@ -40,18 +40,15 @@ const DrawerContents: React.FC<DrawerContentProps> = ({ is24HrTime, setIs24HrTim
 
 // Drawer Component
 const Drawer = () => {
-    const {
-        is24HrTime,
-        setIs24HrTime,
-        isDrawerOpen,
-        availableHours,
-        setAvailableHours
-    } = useSettings();
+    const { is24HrTime, availableHours, isDrawerOpen, dispatch } = useSettings();
 
     return (
         <div className={`Drawer__Container ${isDrawerOpen ? "Drawer__Container--isOpen" : ""}`}>
-        <DrawerContents is24HrTime={is24HrTime} setIs24HrTime={setIs24HrTime} availableHours={availableHours} setAvailableHours={setAvailableHours} />
-    </div>
+            <DrawerContents
+                is24HrTime={is24HrTime}
+                setIs24HrTime={() => dispatch({ type: "SET_24HR_TIME", payload: !is24HrTime })}
+                availableHours={availableHours}
+                setAvailableHours={(newHours: number[]) => dispatch({ type: "SET_AVAILABLE_HOURS", payload: [...newHours] })} />    </div>
     )
 };
 
