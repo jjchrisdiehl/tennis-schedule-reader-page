@@ -10,7 +10,7 @@ interface SliderProps {
     defaultValues?: number[]; // Default values for the slider
     is24HrTime?: boolean;
     availableHours: number[];
-    setAvailableHours: React.Dispatch<React.SetStateAction<number[]>>;
+    setAvailableHours: (newHours: number[]) => void;
 }
 
 const Slider: React.FC<SliderProps> = ({
