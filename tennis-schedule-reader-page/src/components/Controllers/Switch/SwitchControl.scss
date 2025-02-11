@@ -2,23 +2,24 @@
   all: unset;
   width: 42px;
   height: 25px;
-  background-color: #2c3338;
+  background-color: #50575e;
   border-radius: 9999px;
   position: relative;
-  box-shadow: 0 2px 10px var(#1d2327);
+  box-shadow: 0 0 0 3px #2c3338;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
   &:focus {
-    box-shadow: 0 0 0 2px #1d2327;
+    box-shadow: 0 0 0 3px #399ce3;
     outline: none;
   }
 
   &[data-state="checked"] {
-    box-shadow: 0 0 0 2px #deb100;
+    box-shadow: 0 0 0 3px #deb100;
     background-color: #f2d76b;
 
     & .Switch__Thumb {
-      background-color: #3c434a;
+      background-color: white;
+      box-shadow: 0 0 0 2px gray;
     }
   }
 }

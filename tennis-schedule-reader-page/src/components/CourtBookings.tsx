@@ -21,6 +21,7 @@ export function CourtBookings({
     const {
         is24HrTime,
         availableHours,
+        sessionLength
     } = useSettings();
 
 
@@ -49,6 +50,15 @@ export function CourtBookings({
         );
     }
 
+    function isBookingWithinSessionLength(
+        booking: BookingInterface,
+        sessionLength: number[]
+    ): boolean {
+        const [short, long] = sessionLength;
+        return Number(booking.available_time) >= short && Number(booking.available_time) <= long
+
+    }
+
     return (
         <div>
             {data.map((dayData: CourtBookingsData, index: number) => {
@@ -74,6 +84,10 @@ export function CourtBookings({
                                         isBookingWithinAvailableHours(
                                             booking,
                                             availableHours
+                                        ) &&
+                                        isBookingWithinSessionLength(
+                                            booking,
+                                            sessionLength
                                         )
                                     );
                                     if (bookings.length === 0) return null; // Skip empty bookings

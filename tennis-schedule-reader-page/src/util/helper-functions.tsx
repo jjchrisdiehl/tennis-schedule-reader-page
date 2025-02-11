@@ -109,3 +109,18 @@ export const timeAgo = (isoTimestamp: string): string => {
         return `Updated ${days} days ago`;
     }
 };
+
+export const formatSessionLength = (time: number): string => {
+
+    const plural = time > 1;
+
+    if (time === .5) {
+        return "30 min"
+    }
+
+    if (time >= 1) {
+        return `${time} hr${plural ? 's' : ''}`
+    }
+
+    return String(time);
+}

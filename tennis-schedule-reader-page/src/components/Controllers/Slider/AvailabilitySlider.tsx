@@ -3,7 +3,7 @@ import React from "react";
 import { formatTime } from "../../../util/helper-functions";
 import "./Slider.scss";
 
-interface SliderProps {
+interface AvailabilitySliderProps {
     min?: number; // Minimum value of the slider
     max?: number; // Maximum value of the slider
     step?: number; // Step size of the slider
@@ -13,7 +13,7 @@ interface SliderProps {
     setAvailableHours: (newHours: number[]) => void;
 }
 
-const Slider: React.FC<SliderProps> = ({
+export const AvailabilitySlider: React.FC<AvailabilitySliderProps> = ({
     min = 0, // Default minimum value
     max = 100, // Default maximum value
     step = 1, // Default step size
@@ -33,15 +33,6 @@ const Slider: React.FC<SliderProps> = ({
 
     return (
         <>
-            <div className={"Slider__Values"}>
-                <span>
-                    {formatTime(sliderValues[0].toString(), is24HrTime)}
-                </span>
-                <span>
-                    {formatTime(sliderValues[1].toString(), is24HrTime)}
-                </span>
-            </div>
-
             <RadixSlider.Root
                 className="Slider__Root"
                 value={availableHours} // Controlled value
@@ -61,8 +52,14 @@ const Slider: React.FC<SliderProps> = ({
                     />
                 ))}
             </RadixSlider.Root>
+            <div className={"Slider__Values"}>
+                <span>
+                    {formatTime(sliderValues[0].toString(), is24HrTime)}
+                </span>
+                <span>
+                    {formatTime(sliderValues[1].toString(), is24HrTime)}
+                </span>
+            </div>
         </>
     );
 };
-
-export default Slider;
