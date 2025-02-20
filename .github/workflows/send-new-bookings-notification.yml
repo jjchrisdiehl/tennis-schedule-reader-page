@@ -7,6 +7,8 @@ on:
     paths:
       - 'api/bookings_result_new.json'
 
+  workflow_dispatch: # Allows manual triggering
+
 jobs:
   send-notifications:
     runs-on: ubuntu-latest
