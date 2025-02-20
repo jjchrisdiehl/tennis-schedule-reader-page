@@ -54,7 +54,12 @@ export function CourtBookings({
         booking: BookingInterface,
         sessionLength: number[]
     ): boolean {
-        const [short, long] = sessionLength;
+        if (!Array.isArray(sessionLength)) {
+            console.error("Invalid sessionLength value:", sessionLength);
+            return false;
+        }
+
+        const [short, long = 3] = sessionLength;
         return Number(booking.available_time) >= short && Number(booking.available_time) <= long
 
     }
@@ -67,7 +72,9 @@ export function CourtBookings({
                     const courtName = Object.keys(court)[0];
                     const courtBookings = court[courtName];
                     return courtBookings.some((booking) =>
+
                         isBookingWithinAvailableHours(booking, availableHours)
+
                     );
                 });
 

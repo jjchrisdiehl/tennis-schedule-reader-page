@@ -1,22 +1,32 @@
-import React, { useReducer, useEffect } from "react";
+import React, { useReducer, useEffect, useState } from "react";
 import { SettingsContext } from "./SettingsContext";
 import { defaultSettingsState, settingsReducer, SettingsState } from "./settingsReducer";
-
-const STORAGE_KEY = "appSettings"; // Key for localStorage
+import { getSettings, saveSettings } from "../util/indexedDB";
 
 export const SettingsProvider: React.FC<{ children: React.ReactNode; lastUpdateTime: string }> = ({ children, lastUpdateTime }) => {
-    // Load from localStorage or use default state
-    const getInitialState = (): SettingsState => {
-        const savedSettings = localStorage.getItem(STORAGE_KEY);
-        return savedSettings ? JSON.parse(savedSettings) : defaultSettingsState;
+    const [isLoaded, setIsLoaded] = useState(false);
+
+    const getInitialState = async (): Promise<SettingsState> => {
+        const savedSettings = await getSettings();
+        return savedSettings || defaultSettingsState;
     };
 
-    const [state, dispatch] = useReducer(settingsReducer, undefined, getInitialState);
+    const [state, dispatch] = useReducer(settingsReducer, defaultSettingsState);
 
-    // Save to localStorage whenever state updates
     useEffect(() => {
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
-    }, [state]);
+        getInitialState().then((initialState) => {
+            dispatch({ type: "LOAD_SETTINGS", payload: initialState });
+            setIsLoaded(true);
+        });
+    }, []);
+
+    useEffect(() => {
+        if (isLoaded) {
+            saveSettings(state);
+        }
+    }, [state, isLoaded]);
+
+    if (!isLoaded) return null; // Prevent rendering until settings are loaded
 
     return (
         <SettingsContext.Provider value={{ ...state, dispatch, lastUpdateTime }}>

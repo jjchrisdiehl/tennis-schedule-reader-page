@@ -1,0 +1,27 @@
+name: Trigger Notifications on New Bookings
+
+on:
+  push:
+    branches:
+      - trunk
+    paths:
+      - 'api/bookings_result_new.json'
+
+jobs:
+  send-notifications:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Public Repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Print working directory and list files
+        run: pwd && ls -R
+
+      - name: Parse New Bookings and Trigger Notifications
+        run: node scripts/sendNotifications.js

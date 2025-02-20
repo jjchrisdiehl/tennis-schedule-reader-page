@@ -1,18 +1,9 @@
 .Drawer__Button {
-  height: 50px;
-  width: 50px;
-  background-color: transparent;
-  border-radius: 10px;
-  right: .5rem;
-  display: inline-block;
-  position: fixed;
   z-index: 2;
-  top: 2rem;
 
   & .Drawer__Button-Icon {
-    width: 32px;
-    height: 32px;
-    transition: transform 0.25s ease-in-out, filter 0.25s ease-in-out;
+    width: 26px;
+    transition: transform 0.25s ease-in-out 0.25s, filter 0.25s ease-in-out;
 
     &:hover {
       transform: rotate(25deg);
@@ -20,12 +11,15 @@
     }
 
     &:active {
-        filter: brightness(60%);
+      filter: brightness(60%);
     }
   }
 }
 
 .Drawer__Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 100vh;
   width: 25vw;
   min-width: 350px;
@@ -37,44 +31,46 @@
   top: 0;
   z-index: 1;
   border-left: 2px solid #50575e;
-  -webkit-box-shadow: -20px 0px 16px -8px rgba(29, 35, 39, 1);
-  -moz-box-shadow: -20px 0px 16px -8px rgba(29, 35, 39, 1);
   box-shadow: -20px 0px 16px -8px rgba(29, 35, 39, 1);
+  box-sizing: content-box;
+  row-gap: 1rem;
 
   &--isOpen {
     transform: translate(0);
+
+    .Drawer__Button{
+      min-height: min-content;
+      display: flex;
+      justify-content: flex-end;
+      padding-inline: 0 2.5rem;
+    }
+  }
+  & .Drawer__Header {
+    min-height: min-content; // Only take up as much height as needed
+    padding-block-start: clamp(2rem, 2vw, 4rem);
   }
 
   & .Drawer__Contents {
-    padding: 3rem;
+    padding: 0 2.5rem;
+    flex: 1; // Takes up remaining space
+    overflow-y: auto; // Enables scrolling if content overflows
+
+    &-title {
+      margin: 0 0 0.75rem;
+    }
 
     & .Settings__List {
       padding: 0;
       display: flex;
       flex-direction: column;
-      row-gap: 1rem;
+      row-gap: 2rem;
     }
 
     & .Drawer__Item {
       position: relative;
       display: flex;
-      padding: 0.5rem 0;
       flex-direction: column;
-    }
-
-    & .ControlGroup__Title {
-      margin: 0.5rem 0;
-    }
-
-    & .ControlGroup__Item {
-      display: flex;
-      justify-content: space-between;
-
-      &.stacked {
-        flex-direction: column;
-        align-items: flex-start;
-        row-gap: .25rem;
-      }
+      row-gap: 0.5rem;
     }
 
     & .drawer-button__clear-settings {
@@ -87,6 +83,30 @@
     }
 
     & .ControlGroup_Label {
+    }
+  }
+
+  & .Drawer__Footer {
+    min-height: min-content; // Only take up as much height as needed
+    position: relative;
+    font-weight: 600;
+    padding: 1rem 1.75rem;
+    border-top: 1px solid #50575e;
+    box-shadow: 0px -1px 10px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  & .ControlGroup__Title {
+    margin: 0;
+  }
+
+  & .ControlGroup__Item {
+    display: flex;
+    justify-content: space-between;
+
+    &.stacked {
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 0.25rem;
     }
   }
 }

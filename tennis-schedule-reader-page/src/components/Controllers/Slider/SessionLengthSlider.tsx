@@ -22,7 +22,7 @@ export const SessionLengthSlider: React.FC<SessionLengthSliderProps> = ({
 }) => {
 
     // Ensure availableHours has a valid default state
-    const sliderValues = sessionLength.length === 2 ? sessionLength : defaultValues;
+    const sliderValues = sessionLength?.length === 2 ? sessionLength : defaultValues;
 
     // Event handler for when the slider value changes
     const handleValueChange = (value: number[]) => {

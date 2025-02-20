@@ -1,7 +1,8 @@
 import { AvailabilitySlider, SessionLengthSlider } from "../Controllers/Slider";
-import { SwitchControl } from "../Controllers/Switch/SwitchControl";
+import { Is24HrSwitch, NotificationSwitch } from "../Controllers/Switch/";
 import { DrawerItem } from "./DrawerItem";
 import { useSettings } from '../../contexts/SettingsContext';
+import { DrawerButton } from "./DrawerButton";
 
 // Define the props type for the Drawer component
 interface DrawerContentProps {
@@ -19,13 +20,13 @@ const DrawerContents: React.FC<DrawerContentProps> = ({ clearSettings, is24HrTim
     console.log('Drawer state: ', { 'is24:': is24HrTime, 'setis24': setIs24HrTime, 'availableHrs': availableHours, 'setavailablehrs': setAvailableHours })
     return (
         <div className="Drawer__Contents">
-            <h2>Settings</h2>
+            <h2 className="Drawer__Contents-title">Settings</h2>
             <div className="Settings__List">
                 <DrawerItem>
                     <h3 className="ControlGroup__Title">Display time</h3>
                     <div className="ControlGroup__Item">
                         <span className="ControlGroup__Label">24 hour time</span>
-                        <SwitchControl is24HrTime={is24HrTime} onChangeHandler={setIs24HrTime} />
+                        <Is24HrSwitch is24HrTime={is24HrTime} onChangeHandler={setIs24HrTime} />
                     </div>
                 </DrawerItem>
                 <DrawerItem>
@@ -55,6 +56,9 @@ const Drawer = () => {
 
     return (
         <div className={`Drawer__Container ${isDrawerOpen ? "Drawer__Container--isOpen" : ""}`}>
+            <div className="Drawer__Header">
+                {isDrawerOpen && <DrawerButton />}
+            </div>
             <DrawerContents
                 clearSettings={() => dispatch({ type: "CLEAR_SETTINGS" })}
                 is24HrTime={is24HrTime}
@@ -66,7 +70,12 @@ const Drawer = () => {
                 setAvailableHours={(newHours: number[]) => dispatch({ type: "SET_AVAILABLE_HOURS", payload: [...newHours] })}
                 sessionLength={sessionLength}
                 setSessionLength={(newHours: number[]) => dispatch({ type: "SET_SESSION_LENGTH", payload: [...newHours] })} />
-
+            <div className="Drawer__Footer">
+                <div className="ControlGroup__Item">
+                    <span className="ControlGroup__Label">Notifications</span>
+                    <NotificationSwitch />
+                </div>
+            </div>
         </div>
     )
 };

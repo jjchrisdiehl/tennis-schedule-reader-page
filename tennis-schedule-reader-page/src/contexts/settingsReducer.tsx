@@ -10,7 +10,7 @@ export const defaultSettingsState: SettingsState = {
     is24HrTime: false,
     availableHours: [6, 22],
     isDrawerOpen: false,
-    sessionLength: [.5, 3],
+    sessionLength: [0.5, 3],
 };
 
 export type SettingsAction =
@@ -18,7 +18,8 @@ export type SettingsAction =
     | { type: "SET_AVAILABLE_HOURS"; payload: number[] }
     | { type: "SET_SESSION_LENGTH"; payload: number[] }
     | { type: "TOGGLE_DRAWER" }
-    | { type: "CLEAR_SETTINGS" };
+    | { type: "CLEAR_SETTINGS" }
+    | { type: "LOAD_SETTINGS"; payload: SettingsState }; // ✅ Add this
 
 export const settingsReducer = (state: SettingsState, action: SettingsAction): SettingsState => {
     switch (action.type) {
@@ -31,7 +32,9 @@ export const settingsReducer = (state: SettingsState, action: SettingsAction): S
         case "TOGGLE_DRAWER":
             return { ...state, isDrawerOpen: !state.isDrawerOpen };
         case "CLEAR_SETTINGS":
-            return { ...defaultSettingsState, isDrawerOpen: state.isDrawerOpen }
+            return { ...defaultSettingsState, isDrawerOpen: state.isDrawerOpen };
+        case "LOAD_SETTINGS": // ✅ Handle initial settings load
+            return { ...state, ...action.payload };
         default:
             return state;
     }
