@@ -22,8 +22,14 @@ jobs:
         with:
           node-version: 18
 
-      - name: Print working directory and list files
-        run: pwd && ls -R
+      - name: Delete cached node_modules
+        run: rm -rf node_modules
+
+      - name: Install dependencies
+        run: cd tennis-schedule-reader-page && npm install
+
+      - name: Debug installed dependencies
+        run: ls -R tennis-schedule-reader-page/node_modules
 
       - name: Parse New Bookings and Trigger Notifications
-        run: node tennis-schedule-reader-page/scripts/sendNotifications.js
+        run: cd tennis-schedule-reader-page && node scripts/sendNotifications.js
