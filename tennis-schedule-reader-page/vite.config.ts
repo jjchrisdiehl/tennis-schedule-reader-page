@@ -1,38 +1,56 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
+import { VitePWA } from "vite-plugin-pwa";
 
 export default defineConfig(({ mode }) => {
-  const isDev = mode === "development"; // Ensure correct mode for local vs. GitHub Pages
-  console.log("Vite Mode:", mode); // Debugging output
+  const isDev = mode === "development";
 
   return {
-    root: ".", // Load from the correct project subdirectory
-    base: isDev ? "/" : "/tennis-schedule-reader-page/", // Use root locally, repo name for GitHub Pages
-    build: {
-      outDir: "dist", // Ensure the output goes into dist/
-      emptyOutDir: true, // Clears previous builds
-    },
-    plugins: [react()],
-    css: {
-      preprocessorOptions: {
-        scss: {
-          additionalData: `
-            @use '/src/styles/variables' as *;
-            @use '/src/styles/mixins' as *;
-          `,
+    base: isDev ? "/" : "/tennis-schedule-reader-page/",
+    plugins: [
+      react(),
+      VitePWA({
+        registerType: "autoUpdate",
+        devOptions: { enabled: true },
+        manifest: {
+          name: "Tennis Scheduler",
+          short_name: "Tennis",
+          description: "Stay updated with new tennis court bookings!",
+          theme_color: "#ffffff",
+          background_color: "#ffffff",
+          display: "standalone",
+          icons: [
+            {
+              src: "/src/assets/cog-wheel-silhouette.png",
+              sizes: "256x256",
+              type: "image/png",
+            },
+          ],
         },
-      },
-    },
+        workbox: {
+          runtimeCaching: [
+            {
+              urlPattern: /^https:\/\/your-api-endpoint\.com\//,
+              handler: "NetworkFirst",
+              options: {
+                cacheName: "api-cache",
+                expiration: { maxEntries: 50, maxAgeSeconds: 86400 },
+              },
+            },
+          ],
+        },
+      }),
+    ],
     resolve: {
       alias: {
-        "@util": path.resolve(__dirname, "src/util"), // Ensure alias matches tsconfig.json
+        "@util": path.resolve(__dirname, "src/util"),
       },
     },
     server: {
-      open: true, // Open the browser when running dev server
+      open: true,
       host: "localhost",
-      port: 5173, // Ensure it's running on default Vite port
+      port: 5173,
     },
   };
 });

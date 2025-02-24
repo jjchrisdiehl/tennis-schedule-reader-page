@@ -1,0 +1,16 @@
+{
+    "name": "Tennis Scheduler",
+    "short_name": "Tennis",
+    "description": "Stay updated with new tennis court bookings",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "start_url": "/",
+    "icons": [
+      {
+        "src": "/src/assets/cog-wheel-silhouette.png",
+        "sizes": "256x256",
+        "type": "image/png"
+      }
+    ]
+  }
