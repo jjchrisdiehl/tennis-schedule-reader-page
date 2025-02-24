@@ -1,13 +1,16 @@
 #root {
-  max-width: 1280px;
   width: 100%;
-  margin-inline: auto; /* Center horizontally when width < max-width */
   padding-inline: clamp(
     1rem,
     5vw,
     4rem
   ); /* Ensure padding to maintain minimum space */
   margin-block: clamp(2rem, 2vw, 4rem); /* Responsive top and bottom margins */
+}
+
+main {
+  max-width: 1280px;
+  margin-inline: auto; /* Center horizontally when width < max-width */
 }
 
 .day-booking {

@@ -1,71 +1,62 @@
-import fs from "fs/promises";
-import { sendPushNotification } from "./util/pushNotifications.js"; // Implement this function
+import webpush from "web-push";
+import fs from "fs";
+import path from "path";
 
+const VAPID_PUBLIC_KEY = process.env.VAPID_PUBLIC_KEY;
+const VAPID_PRIVATE_KEY = process.env.VAPID_PRIVATE_KEY;
+
+webpush.setVapidDetails(
+  "mailto:your-email@example.com",
+  VAPID_PUBLIC_KEY,
+  VAPID_PRIVATE_KEY
+);
 
 /**
- * Formats new bookings into a notification message.
- * @param {Array} newBookings - List of new bookings.
- * @returns {string} - The formatted message or an empty string if no valid bookings exist.
+ * Loads the subscriptions from the secret file.
  */
-function formatBookingsMessage(newBookings) {
-  let message = "New court bookings available:\n";
-  let hasBookings = false;
-
-  for (const booking of newBookings) {
-    const date = booking.date;
-    const courtDetails = [];
-
-    for (const court of booking["Court Bookings"]) {
-      for (const [courtName, times] of Object.entries(court)) {
-        if (times.length > 0) {
-          const timeSlots = times
-            .map((slot) => `${slot.start_time}:00 - ${slot.end_time}:00`)
-            .join(", ");
-          courtDetails.push(`${courtName}: ${timeSlots}`);
-          hasBookings = true; // Ensure we actually have valid bookings
-        }
-      }
-    }
-
-    if (courtDetails.length > 0) {
-      message += `📅 ${date} - ${courtDetails.join(" | ")}\n`;
-    }
+function loadSubscriptions() {
+  const subscriptionsPath = path.resolve("./subscriptions.json");
+  if (!fs.existsSync(subscriptionsPath)) {
+    console.log("No subscriptions file found.");
+    return [];
   }
-
-  return hasBookings ? message : ""; // Return empty string if no valid bookings exist
+  return JSON.parse(fs.readFileSync(subscriptionsPath, "utf-8"));
 }
 
-async function sendNotifications() {
-  // Ensure the file exists before reading
+/**
+ * Sends push notifications to all stored subscribers about new bookings.
+ */
+export async function sendNotification() {
   try {
-    await fs.access("api/bookings_result_new.json");
-  } catch {
-    console.log("❌ File api/bookings_result_new.json does not exist. Exiting.");
-    return;
-  }
-
-  try {
-    const data = await fs.readFile("api/bookings_result_new.json", "utf-8");
-    const newBookings = JSON.parse(data);
-
-    if (!Array.isArray(newBookings) || newBookings.length === 0) {
-      console.log("No new bookings to notify.");
+    const subscriptions = loadSubscriptions();
+    if (subscriptions.length === 0) {
+      console.log("No push subscriptions found.");
       return;
     }
 
-    // Format the notification message
-    const message = formatBookingsMessage(newBookings);
+    const bookingsPath = path.resolve("./api/bookings_result_new.json");
+    if (!fs.existsSync(bookingsPath)) {
+      console.log("No new bookings file found.");
+      return;
+    }
 
-    // Send only if there are actual bookings to notify
-    if (message) {
-      await sendPushNotification(message);
-      console.log("Notification sent successfully!");
-    } else {
-      console.log("No new actual court bookings to notify.");
+    const bookingsData = JSON.parse(fs.readFileSync(bookingsPath, "utf-8"));
+    const message = formatBookingsMessage(bookingsData);
+    if (!message) {
+      console.log("No valid bookings to notify.");
+      return;
+    }
+
+    // Send notification to each subscriber
+    for (const subscription of subscriptions) {
+      try {
+        await webpush.sendNotification(subscription, payload);
+        console.log("Notification sent to:", subscription.endpoint);
+      } catch (error) {
+        console.error("Error sending to subscription:", error);
+      }
     }
   } catch (error) {
-    console.error("Error sending notifications:", error);
+    console.error("Error sending notification:", error);
   }
 }
-
-sendNotifications();

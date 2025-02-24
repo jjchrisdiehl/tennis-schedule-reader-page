@@ -1,5 +1,0 @@
-import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
-import { formatTime, formatAvailableTime } from "../util/helper-functions";
-export function Booking({ courtName, bookings, is24HrTime }) {
-    return (_jsxs("li", { className: "court-column", children: [_jsx("h3", { className: "court-column__title", children: courtName }), bookings.map((booking, index) => (_jsxs("div", { className: "booking-card", children: [_jsx("span", { className: "booking-card__header", children: "Booking" }), _jsxs("p", { children: [_jsx("span", { children: "Time:" }), " ", formatTime(booking.start_time, is24HrTime), " - ", formatTime(booking.end_time, is24HrTime)] }), _jsxs("p", { children: [_jsx("span", { children: "Length:" }), " ", formatAvailableTime(booking.available_time)] }), _jsx("div", { className: "booking-card__footer", children: _jsx("a", { href: "https://www.thetenniscentre.ca/langley/book-court/", target: "_blank", className: "booking-card__button-wrapper", children: _jsx("button", { className: "booking-card__button", children: "Book now" }) }) })] }, index)))] }));
-}
