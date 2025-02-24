@@ -22,17 +22,14 @@ jobs:
         with:
           node-version: 18
 
-      - name: Debug file structure
-        run: ls -R
-
-      - name: Delete cached node_modules
-        run: rm -rf node_modules
+      - name: Load Subscriptions
+        run: |
+          echo "$SUBSCRIPTIONS_JSON" | base64 --decode > tennis-schedule-reader-page/subscriptions.json
+        env:
+          SUBSCRIPTIONS_JSON: ${{ secrets.SUBSCRIPTIONS_JSON }}
 
       - name: Install dependencies
         run: cd tennis-schedule-reader-page && npm install
-
-      - name: Debug installed dependencies
-        run: ls -R tennis-schedule-reader-page/node_modules
 
       - name: Parse New Bookings and Trigger Notifications
         run: cd tennis-schedule-reader-page && node scripts/sendNotifications.js

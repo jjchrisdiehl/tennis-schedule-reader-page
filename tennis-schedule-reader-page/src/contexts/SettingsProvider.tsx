@@ -1,13 +1,13 @@
 import React, { useReducer, useEffect, useState } from "react";
 import { SettingsContext } from "./SettingsContext";
 import { defaultSettingsState, settingsReducer, SettingsState } from "./settingsReducer";
-import { getSettings, saveSettings } from "../util/indexedDB";
+import { getSettingsFromDB, saveSettingsToDB } from "../util/indexedDB";
 
 export const SettingsProvider: React.FC<{ children: React.ReactNode; lastUpdateTime: string }> = ({ children, lastUpdateTime }) => {
     const [isLoaded, setIsLoaded] = useState(false);
 
     const getInitialState = async (): Promise<SettingsState> => {
-        const savedSettings = await getSettings();
+        const savedSettings = await getSettingsFromDB();
         return savedSettings || defaultSettingsState;
     };
 
@@ -22,7 +22,7 @@ export const SettingsProvider: React.FC<{ children: React.ReactNode; lastUpdateT
 
     useEffect(() => {
         if (isLoaded) {
-            saveSettings(state);
+            saveSettingsToDB(state);
         }
     }, [state, isLoaded]);
 

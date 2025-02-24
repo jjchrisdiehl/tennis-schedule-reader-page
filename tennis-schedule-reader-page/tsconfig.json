@@ -2,17 +2,20 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@util/*": ["src/util/*"] // Ensure alias consistency
+      "@util/*": ["tennis-schedule-reader-page/src/util/*"],
+      "@styles/*": ["tennis-schedule-reader-page/src/styles/*"]
     },
     "strict": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "target": "ES2020",
+    "module": "ESNext",
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": false,
     "jsx": "react-jsx",
     "noImplicitAny": true,
-    "types": ["vite/client"]
+    "types": ["vite/client"],
+    "noEmit": true
   },
   "include": ["src"],
   "exclude": ["node_modules", "dist", "vite.config.ts"]

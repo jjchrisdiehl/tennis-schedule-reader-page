@@ -1,102 +1,144 @@
-import { useEffect, useState } from "react";
-import { getToken, deleteToken, onMessage } from "firebase/messaging";
-import { messaging } from "../../firebase-config";
-import { getFcmToken, saveFcmToken } from "../util/indexedDB";
+import { useState, useEffect } from "react";
 
-const VAPID_KEY = "BGYZ0Tjou1G_DHPp9qTLc-r4FFfc_vp3BNJVGI9jo5gnqkO9ua5LWKUtDf3stAMtVCoUqEBZIprgUYkdg3R2pj8"; // Replace with your actual VAPID key
-
+/**
+ * Handles push notifications and manages user subscriptions.
+ */
 const useNotification = () => {
     const [isSubscribed, setIsSubscribed] = useState(false);
-    const [fcmToken, setFcmToken] = useState<string | null>(null);
 
-    /**
-     * Checks if an FCM token exists in IndexedDB. If it does, use it;
-     * otherwise, request a new one.
-     */
     useEffect(() => {
-        const initializeFcmToken = async () => {
-            const storedToken = await getFcmToken();
-            if (storedToken) {
-                console.log("✅ Found existing FCM token in IndexedDB:", storedToken);
-                setFcmToken(storedToken);
-                setIsSubscribed(true);
-            }
-        };
+        checkSubscriptionStatus();
+    }, []);
 
-        initializeFcmToken();
+    useEffect(() => {
+        if ("serviceWorker" in navigator) {
+            const swPath = `/webpush-sw.js`; // Ensures correct path in dev/prod
+
+            navigator.serviceWorker.register(swPath)
+                .then(reg => console.log("✅ Service Worker Registered at:", swPath, reg))
+                .catch(err => console.error("❌ SW Registration Failed:", err));
+        }
     }, []);
 
     /**
-     * Requests notification permission and subscribes the user if granted.
+     * Fetches the VAPID public key from the backend.
+     * @returns {Promise<string | null>} The VAPID public key or null if an error occurs.
+     */
+    const getVapidPublicKey = async (): Promise<string | null> => {
+        try {
+            const url =
+                import.meta.env.MODE === "development"
+                    ? "/vapidPublicKey.json" // Use mock in dev
+                    : "/api/getVapidPublicKey"; // Use real API in production
+
+            const response = await fetch(url);
+
+            if (!response.ok) {
+                throw new Error("Failed to load VAPID public key");
+            }
+            const data = await response.json();
+            console.log('data: ', data);
+            return data.key;
+        } catch (error) {
+            console.error("❌ Error fetching VAPID key:", error);
+            return null;
+        }
+    };
+
+    /**
+     * Checks if the user is already subscribed to push notifications.
+     */
+    const checkSubscriptionStatus = async () => {
+        try {
+            const registration = await navigator.serviceWorker.ready;
+            const subscription = await registration.pushManager.getSubscription();
+            setIsSubscribed(!!subscription);
+        } catch (error) {
+            console.error("⚠️ Error checking subscription status:", error);
+        }
+    };
+
+    /**
+     * Requests permission and subscribes the user to push notifications.
      */
     const requestPermissionAndSubscribe = async () => {
+        console.log("🔔 Requesting notification permission...");
         const permission = await Notification.requestPermission();
+        console.log("📢 Permission response:", permission);
+
         if (permission !== "granted") {
             console.warn("🚫 Notification permission denied");
             return;
         }
 
         try {
+            console.log("🌍 Fetching VAPID public key...");
+            const publicKey = await getVapidPublicKey();
+            if (!publicKey) {
+                console.error("🚨 No VAPID public key available.");
+                return;
+            }
+            console.log("✅ VAPID Key:", publicKey);
+
             const registration = await navigator.serviceWorker.ready;
-            const token = await getToken(messaging, {
-                vapidKey: VAPID_KEY,
-                serviceWorkerRegistration: registration,
+            console.log("🛠 Service Worker Ready:", registration);
+
+            const subscription = await registration.pushManager.subscribe({
+                userVisibleOnly: true,
+                applicationServerKey: urlBase64ToUint8Array(publicKey),
             });
 
-            if (token) {
-                console.log("✅ Subscribed to notifications. Token:", token);
-                setFcmToken(token);
-                setIsSubscribed(true);
+            console.log("📨 Push Subscription Created:", subscription);
 
-                // Store token in IndexedDB
-                await saveFcmToken(token);
-            } else {
-                console.warn("⚠️ No FCM token received.");
-            }
+            // Send the subscription to the backend
+            await fetch("/api/updateSubscription", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ subscription, action: "subscribe" }),
+            });
+
+            setIsSubscribed(true);
         } catch (error) {
-            console.error("❌ Error getting FCM token:", error);
+            console.error("❌ Error subscribing to push notifications:", error);
         }
     };
 
     /**
-     * Unsubscribes the user from notifications and removes their FCM token.
+     * Unsubscribes the user from push notifications.
      */
     const unsubscribeFromNotifications = async () => {
-        if (!fcmToken) {
-            console.warn("⚠️ No token found, skipping unsubscribe.");
-            return;
-        }
-
         try {
-            // Ensure the correct service worker is registered before deleting the token
-            await navigator.serviceWorker.register("/tennis-schedule-reader-page/firebase-messaging-sw.js");
+            const registration = await navigator.serviceWorker.ready;
+            const subscription = await registration.pushManager.getSubscription();
+            if (subscription) {
+                await subscription.unsubscribe();
+                console.log("🔕 Unsubscribed from push notifications");
 
-            await deleteToken(messaging);
-            console.log("🔕 Unsubscribed from notifications");
-            setFcmToken(null);
-            setIsSubscribed(false);
+                // Notify backend
+                await fetch("/api/updateSubscription", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ subscription, action: "unsubscribe" }),
+                });
 
-            // Remove token from IndexedDB
-            await saveFcmToken(null);
+                setIsSubscribed(false);
+            }
         } catch (error) {
             console.error("❌ Error unsubscribing:", error);
         }
     };
 
     /**
-     * Listens for foreground push notifications.
+     * Converts a Base64 string to a Uint8Array.
+     * @param {string} base64String - The Base64 string.
+     * @returns {Uint8Array} The converted Uint8Array.
      */
-    useEffect(() => {
-        const unsubscribe = onMessage(messaging, (payload) => {
-            console.log("🔔 Foreground notification received:", payload);
-            new Notification(payload.notification?.title || "New Notification", {
-                body: payload.notification?.body || "You have a new message.",
-                icon: payload.notification?.icon || "/default-icon.png",
-            });
-        });
-
-        return () => unsubscribe();
-    }, []);
+    function urlBase64ToUint8Array(base64String: string): Uint8Array {
+        const padding = "=".repeat((4 - (base64String.length % 4)) % 4);
+        const base64 = (base64String + padding).replace(/\-/g, "+").replace(/_/g, "/");
+        const rawData = atob(base64);
+        return new Uint8Array([...rawData].map((char) => char.charCodeAt(0)));
+    }
 
     return { isSubscribed, requestPermissionAndSubscribe, unsubscribeFromNotifications };
 };
