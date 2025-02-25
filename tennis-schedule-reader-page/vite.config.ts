@@ -1,7 +1,8 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import path from "path";
 import { VitePWA } from "vite-plugin-pwa";
+import tsconfigPaths from "vite-tsconfig-paths";
+console.log("Using tsconfig paths:", tsconfigPaths());
 
 export default defineConfig(({ mode }) => {
   const isDev = mode === "development";
@@ -10,6 +11,7 @@ export default defineConfig(({ mode }) => {
     base: isDev ? "/" : "/tennis-schedule-reader-page/",
     plugins: [
       react(),
+      tsconfigPaths(),
       VitePWA({
         registerType: "autoUpdate",
         devOptions: { enabled: true },
@@ -22,7 +24,7 @@ export default defineConfig(({ mode }) => {
           display: "standalone",
           icons: [
             {
-              src: "/src/assets/cog-wheel-silhouette.png",
+              src: "/cog-wheel-silhouette.png",
               sizes: "256x256",
               type: "image/png",
             },
@@ -42,11 +44,6 @@ export default defineConfig(({ mode }) => {
         },
       }),
     ],
-    resolve: {
-      alias: {
-        "@util": path.resolve(__dirname, "src/util"),
-      },
-    },
     server: {
       open: true,
       host: "localhost",

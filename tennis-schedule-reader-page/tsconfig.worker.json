@@ -1,0 +1,8 @@
+// filepath: /Users/jerome-diehl-work-mac/Documents/Local Code/Scrapers/Tennis Schedule Github Page/tennis-schedule-reader-page/tsconfig.worker.json
+{
+    "extends": "./tsconfig.base.json",
+    "compilerOptions": {
+      "lib": ["DOM", "ESNext"]
+    },
+    "include": ["src/worker"]
+  }
