@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+const isDev = import.meta.env.MODE === "development";
 
 /**
  * Handles push notifications and manages user subscriptions.
@@ -12,8 +13,7 @@ const useNotification = () => {
 
     useEffect(() => {
         if ("serviceWorker" in navigator) {
-            const swPath = `/webpush-sw.js`; // Ensures correct path in dev/prod
-
+            const swPath = `/${!isDev ? "tennis-schedule-reader-page/" : ""}webpush-sw.js`;
             navigator.serviceWorker.register(swPath)
                 .then(reg => console.log("✅ Service Worker Registered at:", swPath, reg))
                 .catch(err => console.error("❌ SW Registration Failed:", err));
