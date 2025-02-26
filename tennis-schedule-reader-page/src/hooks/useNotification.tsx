@@ -27,9 +27,9 @@ const useNotification = () => {
     const getVapidPublicKey = async (): Promise<string | null> => {
         try {
             const url =
-                import.meta.env.MODE === "development"
+                isDev
                     ? "/vapidPublicKey.json" // Use mock in dev
-                    : "/api/getVapidPublicKey"; // Use real API in production
+                    : "/tennis-schedule-reader-page/api/getVapidPublicKey"; // Use real API in production
 
             const response = await fetch(url);
 
