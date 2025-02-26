@@ -26,18 +26,16 @@ const useNotification = () => {
      */
     const getVapidPublicKey = async (): Promise<string | null> => {
         try {
-            const url =
-                isDev
-                    ? "/vapidPublicKey.json" // Use mock in dev
-                    : "/tennis-schedule-reader-page/api/getVapidPublicKey"; // Use real API in production
+            const url = `${import.meta.env.BASE_URL}api/vapidPublicKey.json`; // Use static JSON file
 
             const response = await fetch(url);
 
             if (!response.ok) {
                 throw new Error("Failed to load VAPID public key");
             }
+
             const data = await response.json();
-            console.log('data: ', data);
+            console.log("🔑 VAPID Public Key:", data.key);
             return data.key;
         } catch (error) {
             console.error("❌ Error fetching VAPID key:", error);
