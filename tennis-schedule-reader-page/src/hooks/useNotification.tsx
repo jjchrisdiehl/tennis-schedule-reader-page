@@ -26,7 +26,7 @@ const useNotification = () => {
      */
     const getVapidPublicKey = async (): Promise<string | null> => {
         try {
-            const url = `${import.meta.env.BASE_URL}api/vapidPublicKey.json`; // Use static JSON file
+            const url = `${import.meta.env.BASE_URL}vapidPublicKey.json`; // Use static JSON file
 
             const response = await fetch(url);
 
