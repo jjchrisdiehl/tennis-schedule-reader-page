@@ -24,7 +24,9 @@ export default defineConfig(({ mode }) => {
           display: "standalone",
           icons: [
             {
-              src: "/cog-wheel-silhouette.png",
+              src: isDev
+                ? "/cog-wheel-silhouette.png"
+                : "/tennis-schedule-reader-page/cog-wheel-silhouette.png",
               sizes: "256x256",
               type: "image/png",
             },

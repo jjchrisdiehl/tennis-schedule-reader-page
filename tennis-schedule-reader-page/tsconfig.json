@@ -1,9 +1,20 @@
-// filepath: /Users/jerome-diehl-work-mac/Documents/Local Code/Scrapers/Tennis Schedule Github Page/tennis-schedule-reader-page/tsconfig.json
 {
-  "extends": "./tsconfig.base.json",
   "compilerOptions": {
+    "baseUrl": ".",
+    "strict": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": false,
+    "jsx": "react-jsx",
+    "noImplicitAny": true,
+    "types": ["vite/client"],
+    "noEmit": true,
+    "skipLibCheck": true,
     "lib": ["DOM", "ESNext"]
   },
-  "include": ["src", "vite.config.ts", "src/types/shared-worker.d.ts"],
-  "exclude": ["node_modules", "dist", "vite.config.ts", "src/worker"]
+  "include": ["src", "vite.config.ts"],
+  "exclude": ["node_modules", "dist", "vite.config.ts"]
 }

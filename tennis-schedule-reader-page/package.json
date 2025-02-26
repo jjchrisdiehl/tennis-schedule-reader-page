@@ -3,16 +3,16 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://jjchrisdiehl.github.io/tennis-schedule-reader-page",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -p tsconfig.json && tsc -p tsconfig.worker.json && vite build --config vite.config.ts",
+    "build": "tsc -p tsconfig.json && vite build --config vite.config.ts",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
     "@radix-ui/react-slider": "^1.2.2",
     "@radix-ui/react-switch": "^1.1.2",
-    "firebase": "^11.3.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "vite-tsconfig-paths": "^5.1.4",
