@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 const isDev = import.meta.env.MODE === "development";
+import { updateSubscription } from "../util/updateSubscription";
 
 /**
  * Handles push notifications and manages user subscriptions.
@@ -88,12 +89,8 @@ const useNotification = () => {
 
             console.log("📨 Push Subscription Created:", subscription);
 
-            // Send the subscription to the backend
-            await fetch("/api/updateSubscription", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ subscription, action: "subscribe" }),
-            });
+            // Call the API function to trigger GitHub Actions
+            await updateSubscription(subscription, "subscribe");
 
             setIsSubscribed(true);
         } catch (error) {
@@ -101,9 +98,6 @@ const useNotification = () => {
         }
     };
 
-    /**
-     * Unsubscribes the user from push notifications.
-     */
     const unsubscribeFromNotifications = async () => {
         try {
             const registration = await navigator.serviceWorker.ready;
@@ -112,12 +106,8 @@ const useNotification = () => {
                 await subscription.unsubscribe();
                 console.log("🔕 Unsubscribed from push notifications");
 
-                // Notify backend
-                await fetch("/api/updateSubscription", {
-                    method: "POST",
-                    headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify({ subscription, action: "unsubscribe" }),
-                });
+                // Call the API function to trigger GitHub Actions
+                await updateSubscription(subscription, "unsubscribe");
 
                 setIsSubscribed(false);
             }
