@@ -1,7 +1,7 @@
 [
   {
     "date": "20250304",
-    "lastUpdated": "2025-03-04T21:49:57.004Z",
+    "lastUpdated": "2025-03-04T22:13:49.310Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -25,7 +25,7 @@
   },
   {
     "date": "20250305",
-    "lastUpdated": "2025-03-04T21:49:57.030Z",
+    "lastUpdated": "2025-03-04T22:13:49.337Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -67,7 +67,7 @@
   },
   {
     "date": "20250306",
-    "lastUpdated": "2025-03-04T21:49:57.055Z",
+    "lastUpdated": "2025-03-04T22:13:49.362Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -155,7 +155,7 @@
   },
   {
     "date": "20250307",
-    "lastUpdated": "2025-03-04T21:49:57.073Z",
+    "lastUpdated": "2025-03-04T22:13:49.380Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -202,7 +202,7 @@
   },
   {
     "date": "20250308",
-    "lastUpdated": "2025-03-04T21:49:57.085Z",
+    "lastUpdated": "2025-03-04T22:13:49.392Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -244,7 +244,7 @@
   },
   {
     "date": "20250309",
-    "lastUpdated": "2025-03-04T21:49:57.096Z",
+    "lastUpdated": "2025-03-04T22:13:49.403Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -298,7 +298,7 @@
   },
   {
     "date": "20250310",
-    "lastUpdated": "2025-03-04T21:49:57.105Z",
+    "lastUpdated": "2025-03-04T22:13:49.412Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -402,18 +402,13 @@
   },
   {
     "date": "20250311",
-    "lastUpdated": "2025-03-04T21:49:57.121Z",
+    "lastUpdated": "2025-03-04T22:13:49.428Z",
     "Court Bookings": [
       {
         "Court 1": [
           {
             "start_time": 9,
             "end_time": 10,
-            "available_time": 1
-          },
-          {
-            "start_time": 13.5,
-            "end_time": 14.5,
             "available_time": 1
           }
         ]
@@ -432,8 +427,13 @@
           },
           {
             "start_time": 13,
+            "end_time": 14,
+            "available_time": 1
+          },
+          {
+            "start_time": 14,
             "end_time": 14.5,
-            "available_time": 1.5
+            "available_time": 0.5
           }
         ]
       },
