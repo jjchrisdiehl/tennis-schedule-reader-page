@@ -20,7 +20,11 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
+      
+      - run: "echo 'PAT starts with: ${GH_PAT:0:5}'"
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+          
       - name: Call GitHub API with PAT
         run: |
           curl -X POST "https://api.github.com/repos/${{ github.repository }}/actions/workflows/update-subscriptions.yml/dispatches" \
