@@ -1,7 +1,7 @@
 [
   {
-    "date": "20250311",
-    "lastUpdated": "2025-03-04T08:17:52.531Z",
+    "date": "20250305",
+    "lastUpdated": "2025-03-04T08:42:55.119Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -13,7 +13,13 @@
         "Court 3": []
       },
       {
-        "Court 4": []
+        "Court 4": [
+          {
+            "start_time": 10,
+            "end_time": 11,
+            "available_time": 1
+          }
+        ]
       },
       {
         "Court 5": []
