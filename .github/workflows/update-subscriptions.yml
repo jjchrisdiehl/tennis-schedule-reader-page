@@ -27,7 +27,7 @@ jobs:
           
       - name: Call GitHub API with PAT
         run: |
-          curl -X POST "https://api.github.com/repos/${{ github.repository }}/actions/workflows/update-subscriptions.yml/dispatches" \
+          curl -X POST "https://api.github.com/repos/jjchrisdiehl/tennis-schedule-reader-page/actions/workflows/update-subscriptions.yml/dispatches" \
           -H "Authorization: Bearer ${{ secrets.GH_PAT }}" \
           -H "Accept: application/vnd.github.v3+json" \
           -H "Content-Type: application/json" \
