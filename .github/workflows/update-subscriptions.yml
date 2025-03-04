@@ -1,0 +1,33 @@
+name: Update Subscriptions
+
+on:
+  workflow_dispatch:
+    inputs:
+      subscription:
+        description: "Push subscription JSON"
+        required: true
+      action:
+        description: "subscribe or unsubscribe"
+        required: true
+
+jobs:
+  update-subscriptions:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Call GitHub API with PAT
+        run: |
+          curl -X POST "https://api.github.com/repos/${{ github.repository }}/actions/workflows/update-subscriptions.yml/dispatches" \
+          -H "Authorization: Bearer ${{ secrets.GH_PAT }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          -H "Content-Type: application/json" \
+          --data '{
+            "ref": "main",
+            "inputs": {
+              "subscription": "${{ github.event.inputs.subscription }}",
+              "action": "${{ github.event.inputs.action }}"
+            }
+          }'
