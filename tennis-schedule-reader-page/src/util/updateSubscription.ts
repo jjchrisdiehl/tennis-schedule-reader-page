@@ -31,18 +31,21 @@ export async function updateSubscription(subscription: PushSubscription, action:
         const formattedSubscription = formatSubscription(subscription);
 
         const response = await fetch(
-            `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/actions/workflows/${WORKFLOW_FILENAME}/dispatches`,
-            {
-                method: "POST",
-                headers: {
-                    "Accept": "application/vnd.github.v3+json",
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify({
-                    ref: "main",
-                    inputs: { subscription: JSON.stringify(formattedSubscription), action },
-                }),
-            }
+          `https://api.github.com/repos/jjchrisdiehl/tennis-schedule-reader-page/actions/workflows/${WORKFLOW_FILENAME}/dispatches`,
+          {
+            method: "POST",
+            headers: {
+              Accept: "application/vnd.github.v3+json",
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              ref: "main",
+              inputs: {
+                subscription: JSON.stringify(formattedSubscription),
+                action,
+              },
+            }),
+          }
         );
 
         if (!response.ok) {
