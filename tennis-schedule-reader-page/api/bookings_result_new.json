@@ -1,1 +1,43 @@
-[]
+[
+  {
+    "date": "20250312",
+    "lastUpdated": "2025-03-05T17:13:51.097Z",
+    "Court Bookings": [
+      {
+        "Court 1": [
+          {
+            "start_time": 8,
+            "end_time": 9,
+            "available_time": 1
+          }
+        ]
+      },
+      {
+        "Court 2": []
+      },
+      {
+        "Court 3": [
+          {
+            "start_time": 8,
+            "end_time": 9,
+            "available_time": 1
+          },
+          {
+            "start_time": 9,
+            "end_time": 13.5,
+            "available_time": 4.5
+          }
+        ]
+      },
+      {
+        "Court 4": []
+      },
+      {
+        "Court 5": []
+      },
+      {
+        "Court 6": []
+      }
+    ]
+  }
+]
