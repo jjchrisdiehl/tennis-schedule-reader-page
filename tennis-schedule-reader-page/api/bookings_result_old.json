@@ -1,7 +1,7 @@
 [
   {
     "date": "20250305",
-    "lastUpdated": "2025-03-05T18:21:40.455Z",
+    "lastUpdated": "2025-03-05T18:45:37.162Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -37,7 +37,7 @@
   },
   {
     "date": "20250306",
-    "lastUpdated": "2025-03-05T18:21:40.483Z",
+    "lastUpdated": "2025-03-05T18:45:37.190Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -125,7 +125,7 @@
   },
   {
     "date": "20250307",
-    "lastUpdated": "2025-03-05T18:21:40.508Z",
+    "lastUpdated": "2025-03-05T18:45:37.220Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -155,7 +155,7 @@
   },
   {
     "date": "20250308",
-    "lastUpdated": "2025-03-05T18:21:40.527Z",
+    "lastUpdated": "2025-03-05T18:45:37.234Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -191,7 +191,7 @@
   },
   {
     "date": "20250309",
-    "lastUpdated": "2025-03-05T18:21:40.540Z",
+    "lastUpdated": "2025-03-05T18:45:37.249Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -245,7 +245,7 @@
   },
   {
     "date": "20250310",
-    "lastUpdated": "2025-03-05T18:21:40.555Z",
+    "lastUpdated": "2025-03-05T18:45:37.260Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -329,7 +329,7 @@
   },
   {
     "date": "20250311",
-    "lastUpdated": "2025-03-05T18:21:40.573Z",
+    "lastUpdated": "2025-03-05T18:45:37.270Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -393,7 +393,7 @@
   },
   {
     "date": "20250312",
-    "lastUpdated": "2025-03-05T18:21:40.593Z",
+    "lastUpdated": "2025-03-05T18:45:37.287Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -407,6 +407,16 @@
             "start_time": 8,
             "end_time": 9,
             "available_time": 1
+          },
+          {
+            "start_time": 9,
+            "end_time": 9.5,
+            "available_time": 0.5
+          },
+          {
+            "start_time": 9.5,
+            "end_time": 10,
+            "available_time": 0.5
           }
         ]
       },
