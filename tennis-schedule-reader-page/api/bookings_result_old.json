@@ -1,7 +1,7 @@
 [
   {
     "date": "20250305",
-    "lastUpdated": "2025-03-05T15:49:33.154Z",
+    "lastUpdated": "2025-03-05T16:24:53.545Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -37,7 +37,7 @@
   },
   {
     "date": "20250306",
-    "lastUpdated": "2025-03-05T15:49:33.182Z",
+    "lastUpdated": "2025-03-05T16:24:53.577Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -125,7 +125,7 @@
   },
   {
     "date": "20250307",
-    "lastUpdated": "2025-03-05T15:49:33.210Z",
+    "lastUpdated": "2025-03-05T16:24:53.595Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -155,7 +155,7 @@
   },
   {
     "date": "20250308",
-    "lastUpdated": "2025-03-05T15:49:33.228Z",
+    "lastUpdated": "2025-03-05T16:24:53.618Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -191,7 +191,7 @@
   },
   {
     "date": "20250309",
-    "lastUpdated": "2025-03-05T15:49:33.241Z",
+    "lastUpdated": "2025-03-05T16:24:53.630Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -245,7 +245,7 @@
   },
   {
     "date": "20250310",
-    "lastUpdated": "2025-03-05T15:49:33.262Z",
+    "lastUpdated": "2025-03-05T16:24:53.641Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -329,7 +329,7 @@
   },
   {
     "date": "20250311",
-    "lastUpdated": "2025-03-05T15:49:33.271Z",
+    "lastUpdated": "2025-03-05T16:24:53.654Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -365,8 +365,8 @@
       {
         "Court 4": [
           {
-            "start_time": 9.5,
-            "end_time": 10.5,
+            "start_time": 7.5,
+            "end_time": 8.5,
             "available_time": 1
           }
         ]
@@ -398,10 +398,16 @@
   },
   {
     "date": "20250312",
-    "lastUpdated": "2025-03-05T15:49:33.287Z",
+    "lastUpdated": "2025-03-05T16:24:53.662Z",
     "Court Bookings": [
       {
-        "Court 1": []
+        "Court 1": [
+          {
+            "start_time": 8,
+            "end_time": 10,
+            "available_time": 2
+          }
+        ]
       },
       {
         "Court 2": []
