@@ -1,28 +1,16 @@
 [
   {
     "date": "20250305",
-    "lastUpdated": "2025-03-05T21:29:21.451Z",
+    "lastUpdated": "2025-03-05T21:39:48.386Z",
     "Court Bookings": [
       {
         "Court 1": []
       },
       {
-        "Court 2": [
-          {
-            "start_time": 13.5,
-            "end_time": 14.5,
-            "available_time": 1
-          }
-        ]
+        "Court 2": []
       },
       {
-        "Court 3": [
-          {
-            "start_time": 13.5,
-            "end_time": 14.5,
-            "available_time": 1
-          }
-        ]
+        "Court 3": []
       },
       {
         "Court 4": []
@@ -37,7 +25,7 @@
   },
   {
     "date": "20250306",
-    "lastUpdated": "2025-03-05T21:29:21.477Z",
+    "lastUpdated": "2025-03-05T21:39:48.415Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -110,7 +98,7 @@
   },
   {
     "date": "20250307",
-    "lastUpdated": "2025-03-05T21:29:21.505Z",
+    "lastUpdated": "2025-03-05T21:39:48.440Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -156,7 +144,7 @@
   },
   {
     "date": "20250308",
-    "lastUpdated": "2025-03-05T21:29:21.520Z",
+    "lastUpdated": "2025-03-05T21:39:48.456Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -192,7 +180,7 @@
   },
   {
     "date": "20250309",
-    "lastUpdated": "2025-03-05T21:29:21.534Z",
+    "lastUpdated": "2025-03-05T21:39:48.479Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -246,7 +234,7 @@
   },
   {
     "date": "20250310",
-    "lastUpdated": "2025-03-05T21:29:21.554Z",
+    "lastUpdated": "2025-03-05T21:39:48.488Z",
     "Court Bookings": [
       {
         "Court 1": [
@@ -325,7 +313,7 @@
   },
   {
     "date": "20250311",
-    "lastUpdated": "2025-03-05T21:29:21.563Z",
+    "lastUpdated": "2025-03-05T21:39:48.497Z",
     "Court Bookings": [
       {
         "Court 1": []
@@ -404,7 +392,7 @@
   },
   {
     "date": "20250312",
-    "lastUpdated": "2025-03-05T21:29:21.578Z",
+    "lastUpdated": "2025-03-05T21:39:48.514Z",
     "Court Bookings": [
       {
         "Court 1": []
